@@ -43,11 +43,11 @@
                 <img src="img/icons/Tilda_Icons_26sn_github.svg" alt="github icon" class="icon">
                 <p>pop9459</p>
             </a>
-            <a href="https://www.linkedin.com/in/peter-kapsiar-630743213/" class="mediaLink">
+            <a href="https://www.linkedin.com/in/peter-kapsiar-630743213" class="mediaLink">
                 <img src="img/icons/Tilda_Icons_26sn_linkedin.svg" alt="linkedIn icon" class="icon">
                 <p>Peter Kapsiar</p>
             </a>
-            <a href="https://www.instagram.com/emanuel__bacigala/" class="mediaLink">
+            <a href="https://www.instagram.com/emanuel__bacigala" class="mediaLink">
                 <img src="img/icons/Tilda_Icons_26sn_instagram.svg" alt="instagram icon" class="icon">
                 <p>@emanuel_bacigala</p>
             </a>
