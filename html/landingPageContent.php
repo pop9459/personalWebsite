@@ -39,22 +39,22 @@
             </table>
         </div>
         <div id="mediaLinks" class="widget">
-            <div href="https://github.com/pop9459" class="mediaLink">
+            <a href="https://github.com/pop9459" class="mediaLink">
                 <img src="img/icons/Tilda_Icons_26sn_github.svg" alt="github icon" class="icon">
                 <p>pop9459</p>
-            </div>
-            <div href="www.linkedin.com/in/peter-kapsiar-630743213" class="mediaLink">
+            </a>
+            <a href="https://www.linkedin.com/in/peter-kapsiar-630743213/" class="mediaLink">
                 <img src="img/icons/Tilda_Icons_26sn_linkedin.svg" alt="linkedIn icon" class="icon">
                 <p>Peter Kapsiar</p>
-            </div>
-            <div href="https://www.instagram.com/emanuel__bacigala/" class="mediaLink">
+            </a>
+            <a href="https://www.instagram.com/emanuel__bacigala/" class="mediaLink">
                 <img src="img/icons/Tilda_Icons_26sn_instagram.svg" alt="instagram icon" class="icon">
                 <p>@emanuel_bacigala</p>
-            </div>
-            <div href="" class="mediaLink">
+            </a>
+            <a href="" class="mediaLink">
                 <img src="img/icons/Tilda_Icons_26sn_mail13.svg" alt="mail icon" class="icon">
                 <p>kapsiar888n@gmail.com</p>
-            </div>
+            </a>
         </div>
     </div>
 </div>
