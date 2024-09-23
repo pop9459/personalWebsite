@@ -75,6 +75,8 @@ export function textSplash()
     logContainer.id = "textSplash";
     document.body.appendChild(logContainer);
 
+    let textSeed = 15;
+
     return new Promise((resolve) => {
         messages.forEach((msg, index) => {
             setTimeout(() => {
@@ -84,18 +86,18 @@ export function textSplash()
 
                 // Auto-scroll to the bottom of the log container
                 window.scrollTo(0, document.body.scrollHeight);
-            }, (index * 30) + 750);
+            }, (index * textSeed) + 500);
         });
 
         setTimeout(() => {
             // Remove the log container after the simulation is complete
             document.getElementById("textSplash").remove();
-        }, messages.length * 50 + 500);
+        }, messages.length * textSeed + 1000);
 
         setTimeout(() => {
             console.log("Text Splash completed");
             resolve();
-        }, messages.length * 50 + 700);
+        }, messages.length * textSeed + 1200);
     });
 }
 
