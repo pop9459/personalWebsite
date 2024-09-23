@@ -1,0 +1,27 @@
+@keyframes backgroundShow {
+    0% {
+        width: 0%;
+        height: 0%;
+        background-size: 0px 0px;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-size: 50px 50px;
+    }
+}
+
+@keyframes expandFromRight {
+    0%
+    {
+        transform: scale(1%, 1%);
+    }
+    50% 
+    {
+        transform: scale(100%, 1%);
+    }
+    100% 
+    {
+        transform: scale(100%, 100%);
+    }
+}

@@ -1,0 +1,12 @@
+.okPrefix {
+    color: lime;
+    font-weight: bold;
+}
+
+.expandBackground {
+    animation: backgroundShow 1.25s forwards cubic-bezier(0.5,1,0.75,1);
+}
+
+.textSplash {
+    color: white;
+}
