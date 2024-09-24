@@ -16,24 +16,24 @@
             <img class="image" src="img/profilePic.jpg" alt="profilePic">
             <table>
                 <tr>
-                    <th>Name:</th>
+                    <th>Name</th>
                     <td>Peter</td>
                 </tr>
                 <tr>
-                    <th>Surname:</th>
+                    <th>Surname</th>
                     <td>Kapsiar</td>
                 </tr>
                 <tr>
-                    <th>Gender:</th>
+                    <th>Gender</th>
                     <td>Male</td>
                 </tr>
                 <tr>
-                    <th>Age:</th>
+                    <th>Age</th>
                     <td><?php echo $age;?></td>
                 </tr>
                 <tr>
-                    <th>Class:</th>
-                    <td>Programer</td>
+                    <th>Class</th>
+                    <td>Computer wizard</td>
                 </tr>
 
             </table>

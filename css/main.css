@@ -27,7 +27,7 @@ body
 #landingPageContent
 {
     display: grid;
-    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-columns: 24vw 1fr 24vw;
 }
 
 
@@ -39,8 +39,9 @@ body
     filter: grayscale(100%); 
 }
 
-#profileInfo table th 
+#profileInfo table th
 {
+    padding-right: 2rem;
     text-align: left;
     font-weight: bolder;
 }
@@ -70,8 +71,7 @@ body
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+
     margin: auto;
     width: 100%;
     padding: 20px;
@@ -106,4 +106,5 @@ body
     padding: 0;
     gap: 10px;
     color: #aacfd1;
+    text-decoration: none;
 }

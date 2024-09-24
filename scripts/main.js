@@ -1,7 +1,7 @@
 import {textSplash, backgroundIntroduce} from  "./loadAnimations.js";
 import {loadMainPageContent, animateWidgets} from "./loadMainpage.js";
 window.onload = function() {
-    let doLoadAnimations = true; 
+    let doLoadAnimations = false; 
     let doTextSplash = true;
 
     if(doLoadAnimations) 
@@ -21,7 +21,8 @@ window.onload = function() {
     }
     else
     {
+        // Load the main page content without animations
         backgroundIntroduce();
-        loadMainPageContent();  // Load the main page content without animations
+        loadMainPageContent();  
     }
 };
