@@ -2,6 +2,7 @@
 {
     display: grid;
     grid-template-columns: 24vw 1fr 24vw;
+    padding: 1.5rem;
 }
 
 #profileInfo img 
@@ -18,6 +19,36 @@
     text-align: left;
     font-weight: bolder;
 }
+
+#topBar {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+}
+
+#clock
+{
+    width:max-content;
+    text-align: center;
+    font-family: kode-mono, monospace;
+    vertical-align: middle;
+    gap: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#clock .time
+{
+    line-height: 2ex;
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+#clock .date
+{
+    line-height: 2ex;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 .mediaLink
 {
     display: flex;
@@ -47,3 +78,4 @@
     border: 1px solid #aacfd1;
     width: 100%;
 }
+

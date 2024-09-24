@@ -1,13 +1,23 @@
+@font-face { 
+    font-family: "CyberbangBold"; 
+    src: url("../fonts/CyberbangBold.ttf"); 
+} 
+
+@font-face {
+    font-family: kode-mono;
+    src: url("../fonts/KodeMono-VariableFont_wght.ttf");
+}
 *
 {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    gap: 1.5rem;
 }
 
 body 
 {
-    font-family: "Mono";
+    font-family: monospace          ;
     font-size: 1.25rem;
     background-color: black;
     color: #aacfd1;
@@ -24,6 +34,11 @@ body
     z-index: -1;
 }
 
+.inlineBlock
+{
+    display: inline-block;
+}
+
 .hidden 
 {
     display: none !important;
@@ -34,7 +49,6 @@ body
     display: flex;
     flex-direction: column;
     align-items:start;
-    padding: 20px;
     gap: 20px;
     max-width: 100% ;
 }
@@ -59,6 +73,17 @@ body
     inset: 0;
     background: #aacfd1;
     clip-path: polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px),0 0,5px  5px ,5px calc(100% - 24px - 2.07px),calc(24px + 2.07px) calc(100% - 5px),calc(100% - 5px) calc(100% - 5px),calc(100% - 5px) calc(24px + 2.07px),calc(100% - 24px - 2.07px) 5px,5px 5px);
+}
+
+.mirror
+{
+    transform: scaleX(-1);
+}
+
+    .spacer{
+    height: 0;
+    margin-top: 0;
+    margin-bottom: auto;
 }
 
 .image

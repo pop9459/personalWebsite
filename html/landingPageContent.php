@@ -21,6 +21,13 @@
 ?>
 
 <div id="landingPageContent">
+    <div id="topBar">
+        <div class="widget spacer"></div>
+        <div class="inlineBlock">
+            <div id="clock" class="widget"></div>
+        </div>
+        <div class="widget spacer mirror"></div>
+    </div>
     <div class="column"></div>
     <div class="column"></div>
     <div class="column">
