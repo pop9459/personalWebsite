@@ -1,11 +1,23 @@
 <?php
-    //function for auto determining my age to be displayed in the stats
-    // Convert to DateTime objects
-    $birthDateObject = new DateTime("2004-07-15");
-    $today = new DateTime();
+    function getMyAge()
+    {
+        //function for auto determining my age to be displayed in the stats
+        $birthDateObject = new DateTime("2004-07-15");
+        $today = new DateTime();
+        return $today->diff($birthDateObject)->y;
+    }
 
-    // Calculate the age
-    $age = $today->diff($birthDateObject)->y;
+    function displayProgressBar($totalSections, $fullSections) {
+        echo "<div class='progressBar'>";
+        for ($i = 0; $i < $totalSections; $i++) {
+            if ($i < $fullSections) {
+                echo "<div class='progressSectionFull'></div>";
+            } else {
+                echo "<div class='progressSection'></div>";
+            }
+        }
+        echo "</div>";
+    }
 ?>
 
 <div id="landingPageContent">
@@ -29,7 +41,7 @@
                 </tr>
                 <tr>
                     <th>Age</th>
-                    <td><?php echo $age;?></td>
+                    <td><?php echo getMyAge(); ?></td>
                 </tr>
                 <tr>
                     <th>Class</th>
@@ -55,6 +67,24 @@
                 <img src="img/icons/Tilda_Icons_26sn_mail13.svg" alt="mail icon" class="icon">
                 <p>kapsiar888n@gmail.com</p>
             </a>
+        </div>
+        <div id="skills" class="widget">
+            <div class="skill">
+                <h3>Git</h3>
+                <?php displayProgressBar(5, 4); ?>
+            </div>
+            <div class="skill">
+                <?php displayProgressBar(5, 4); ?>
+            </div>
+            <div class="skill">
+                <?php displayProgressBar(5, 3); ?>
+            </div>
+            <div class="skill">
+                <?php displayProgressBar(5, 1); ?>
+            </div>
+            <div class="skill">
+                <?php displayProgressBar(5, 1); ?>
+            </div>
         </div>
     </div>
 </div>

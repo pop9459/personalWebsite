@@ -11,7 +11,11 @@
     }
 }
 
-@keyframes expandFromRight {
+.expandVertical {
+    animation: expandVertical 1s ease-in-out;
+}
+
+@keyframes expandVertical {
     0%
     {
         transform: scale(1%, 1%);

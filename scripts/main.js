@@ -1,8 +1,8 @@
 import {textSplash, backgroundIntroduce} from  "./loadAnimations.js";
 import {loadMainPageContent, animateWidgets} from "./loadMainpage.js";
 window.onload = function() {
-    let doLoadAnimations = false; 
-    let doTextSplash = true;
+    let doLoadAnimations = true; 
+    let doTextSplash = false;   
 
     if(doLoadAnimations) 
     {

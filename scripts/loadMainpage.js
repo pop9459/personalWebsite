@@ -22,7 +22,7 @@ export function animateWidgets() {
         {
             setTimeout(() => {
                 widgets[i].classList.remove("hidden");
-                widgets[i].classList.add("expandFromRight");
+                widgets[i].classList.add("expandVertical");
             }, (i * 250) + 500);
         }
         console.log("Widgets animated");  // Log success
