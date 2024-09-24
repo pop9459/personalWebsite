@@ -24,28 +24,6 @@ body
     z-index: -1;
 }
 
-#landingPageContent
-{
-    display: grid;
-    grid-template-columns: 24vw 1fr 24vw;
-}
-
-
-#profileInfo img 
-{
-    margin: 20px;
-    border-radius: 100%;
-    opacity: 80%;
-    filter: grayscale(100%); 
-}
-
-#profileInfo table th
-{
-    padding-right: 2rem;
-    text-align: left;
-    font-weight: bolder;
-}
-
 .hidden 
 {
     display: none !important;
@@ -68,12 +46,12 @@ body
     display: flex;
     flex-direction: column;
 
-    margin: auto;
     width: 100%;
     padding: 2rem;
     gap: 1.5rem;
     overflow: hidden;
 }
+
 .widget:before 
 {
     content: "";
@@ -92,34 +70,4 @@ body
 {
     filter: invert(87%) sepia(25%) saturate(235%) hue-rotate(134deg) brightness(92%) contrast(83%);
     aspect-ratio: 1/1;
-}
-
-.mediaLink
-{
-    display: flex;
-    flex-direction: row;
-    max-height: 2em;
-    padding: 0;
-    gap: 10px;
-    color: #aacfd1;
-    text-decoration: none;
-}
-
-.progressBar
-{
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    min-height: 1rem;
-    gap: 0.5rem;
-}
-
-.progressSectionFull {
-    background-color: #aacfd1;
-    width: 100%;
-}
-
-.progressSection {
-    border: 1px solid #aacfd1;
-    width: 100%;
 }
