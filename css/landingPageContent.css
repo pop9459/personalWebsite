@@ -20,11 +20,6 @@
     font-weight: bolder;
 }
 
-#topBar {
-    grid-column: 1/4;
-    display: flex;
-    justify-content: center;
-}
 
 #clock
 {
@@ -49,6 +44,12 @@
     font-weight: bold;
 }
 
+.topBar {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+}
+
 .mediaLink
 {
     display: flex;
@@ -70,12 +71,12 @@
 }
 
 .progressSectionFull {
-    background-color: #aacfd1;
+    background-color: var(--themeBlue);
     width: 100%;
 }
 
 .progressSection {
-    border: 1px solid #aacfd1;
+    border: 1px solid var(--themeBlue);
     width: 100%;
 }
 

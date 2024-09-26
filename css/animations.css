@@ -15,17 +15,38 @@
     animation: expandVertical 1s ease-in-out;
 }
 
+.expandHorizontal {
+    animation: expandHorizontal 1s ease-in-out;
+}
+
 @keyframes expandVertical {
     0%
     {
-        transform: scale(1%, 1%);
+        scale: 1% 1%;
     }
     50% 
     {
-        transform: scale(100%, 1%);
+        scale: 100% 1%;
     }
     100% 
     {
-        transform: scale(100%, 100%);
+        scale: 100% 100%;
+    }
+}
+
+
+@keyframes expandHorizontal
+{
+    0%
+    {
+        scale: 1% 1%;
+    }
+    50% 
+    {
+        scale: 1% 100%;
+    }
+    100% 
+    {
+        scale: 100% 100%;
     }
 }

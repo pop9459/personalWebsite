@@ -21,12 +21,15 @@
 ?>
 
 <div id="landingPageContent">
-    <div id="topBar">
-        <div class="widget spacer"></div>
+    <div class="topBar">
+        <div class="widget spacer cutCornerBL"></div>
         <div class="inlineBlock">
-            <div id="clock" class="widget"></div>
+            <div id="clock" class="widget">
+                <div class='time'>00:00:00</div> 
+                <div class='date'>00/00/0000</div>
+            </div>
         </div>
-        <div class="widget spacer mirror"></div>
+        <div class="widget spacer cutCornerBR"></div>
     </div>
     <div class="column"></div>
     <div class="column"></div>

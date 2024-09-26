@@ -13,17 +13,34 @@ export function loadMainPageContent() {
 
 export function animateWidgets() {
     return new Promise((resolve) => {
-        const widgets = document.getElementsByClassName("widget");
-        for (let i = 0; i < widgets.length; i++) 
+        var timeBetweenAnimations = 250; // Time between each widget animation
+
+        // animate horizontal widgets
+        const horizontalWidgets = document.querySelectorAll(".topBar > div");
+        for (let i = 0; i < horizontalWidgets.length; i++)
         {
-            widgets[i].classList.add("hidden");
+            horizontalWidgets[i].classList.add("hidden");
         }
-        for (let i = 0; i < widgets.length; i++) 
+        for (let i = 0; i < horizontalWidgets.length; i++) 
         {
             setTimeout(() => {
-                widgets[i].classList.remove("hidden");
-                widgets[i].classList.add("expandVertical");
-            }, (i * 250) + 500);
+                horizontalWidgets[i].classList.remove("hidden");
+                horizontalWidgets[i].classList.add("expandHorizontal");
+            }, i * timeBetweenAnimations);
+        }
+
+        // animate vertical widgets
+        const verticalWidgets = document.querySelectorAll(".column > div");
+        for (let i = 0; i < verticalWidgets.length; i++)
+        {
+            verticalWidgets[i].classList.add("hidden");
+        }
+        for (let i = 0; i < verticalWidgets.length; i++) 
+        {
+            setTimeout(() => {
+                verticalWidgets[i].classList.remove("hidden");
+                verticalWidgets[i].classList.add("expandVertical");
+            }, i * timeBetweenAnimations);
         }
         console.log("Widgets animated");  // Log success
         resolve();

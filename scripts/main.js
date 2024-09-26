@@ -3,7 +3,7 @@ import {loadMainPageContent, animateWidgets} from "./loadMainpage.js";
 import { startClock } from "./clock.js";
 
 window.onload = function() {
-    let doLoadAnimations = true; 
+    let doLoadAnimations = true ; 
     let doTextSplash = false;   
 
     if(doLoadAnimations) 

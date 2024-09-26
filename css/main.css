@@ -7,6 +7,12 @@
     font-family: kode-mono;
     src: url("../fonts/KodeMono-VariableFont_wght.ttf");
 }
+
+:root
+{
+    --themeBlue: #aacfd1;
+}
+
 *
 {
     box-sizing: border-box;
@@ -20,7 +26,7 @@ body
     font-family: monospace          ;
     font-size: 1.25rem;
     background-color: black;
-    color: #aacfd1;
+    color: var(--themeBlue);
 }
 
 #background 
@@ -41,7 +47,7 @@ body
 
 .hidden 
 {
-    display: none !important;
+    scale: 0%;
 }
 
 .column
@@ -66,13 +72,31 @@ body
     overflow: hidden;
 }
 
-.widget:before 
+.widget::after 
 {
     content: "";
     position: absolute;
     inset: 0;
-    background: #aacfd1;
+    background: var(--themeBlue);
     clip-path: polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px),0 0,5px  5px ,5px calc(100% - 24px - 2.07px),calc(24px + 2.07px) calc(100% - 5px),calc(100% - 5px) calc(100% - 5px),calc(100% - 5px) calc(24px + 2.07px),calc(100% - 24px - 2.07px) 5px,5px 5px);
+}
+
+.cutCornerBR::after
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--themeBlue);
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 24px) 100%,0 100%,0 0,5px  5px ,5px calc(100% - 5px),calc(100% - 24px - 2.07px) calc(100% - 5px),calc(100% - 5px) calc(100% - 24px - 2.07px),calc(100% - 5px) 5px,5px 5px);
+}   
+
+.cutCornerBL::after
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--themeBlue);
+    clip-path: polygon(0 0,100% 0,100% 100%,24px 100%,0 calc(100% - 24px),0 0,5px  5px ,5px calc(100% - 24px - 2.07px),calc(24px + 2.07px) calc(100% - 5px),calc(100% - 5px) calc(100% - 5px),calc(100% - 5px) 5px,5px 5px);
 }
 
 .mirror
