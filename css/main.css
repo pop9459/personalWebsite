@@ -78,6 +78,8 @@ body
     position: absolute;
     inset: 0;
     background: var(--themeBlue);
+    
+    /* generated with: https://css-generators.com/custom-corners/ */
     clip-path: polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px),0 0,5px  5px ,5px calc(100% - 24px - 2.07px),calc(24px + 2.07px) calc(100% - 5px),calc(100% - 5px) calc(100% - 5px),calc(100% - 5px) calc(24px + 2.07px),calc(100% - 24px - 2.07px) 5px,5px 5px);
 }
 
