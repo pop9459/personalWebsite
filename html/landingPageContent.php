@@ -31,7 +31,15 @@
         </div>
         <div class="widget spacer cutCornerBR"></div>
     </div>
-    <div class="column"></div>
+    <div class="column">
+        <div class="widget">
+            <h1>MENU</h1>
+            <div class="buttonMenu">
+                <a href="" class="button">About me</a>
+                <a href="" class="button">Assignments</a>
+            </div>
+        </div>
+    </div>
     <div class="column"></div>
     <div class="column">
         <div id="profileInfo" class="widget">
@@ -80,19 +88,27 @@
         </div>
         <div id="skills" class="widget">
             <div class="skill">
+                <h3>Linux</h3>
+                <?php displayProgressBar(5, 5); ?>
+            </div>
+            <div class="skill">
                 <h3>Git</h3>
                 <?php displayProgressBar(5, 4); ?>
             </div>
             <div class="skill">
-                <?php displayProgressBar(5, 4); ?>
-            </div>
-            <div class="skill">
+                <h3>HTML/CSS/JS</h3>
                 <?php displayProgressBar(5, 3); ?>
             </div>
             <div class="skill">
-                <?php displayProgressBar(5, 1); ?>
+                <h3>C#</h3>
+                <?php displayProgressBar(5, 3); ?>
             </div>
             <div class="skill">
+                <h3>Python</h3>
+                <?php displayProgressBar(5, 2); ?>
+            </div>
+            <div class="skill">
+                <h3>Docker</h3>
                 <?php displayProgressBar(5, 1); ?>
             </div>
         </div>

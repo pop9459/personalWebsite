@@ -15,9 +15,6 @@
     animation: expandVertical 1s ease-in-out;
 }
 
-.expandHorizontal {
-    animation: expandHorizontal 1s ease-in-out;
-}
 
 @keyframes expandVertical {
     0%
@@ -34,6 +31,9 @@
     }
 }
 
+.expandHorizontal {
+    animation: expandHorizontal 1s ease-in-out;
+}
 
 @keyframes expandHorizontal
 {
@@ -48,5 +48,16 @@
     100% 
     {
         scale: 100% 100%;
+    }
+}
+
+@keyframes buttonHover {
+    0% {
+        background-color: transparent;
+        color: var(--themeBlue);
+    }
+    100% {
+        background-color: var(--themeBlue);
+        color: transparent;
     }
 }
