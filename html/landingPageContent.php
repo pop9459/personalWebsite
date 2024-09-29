@@ -40,7 +40,26 @@
             </div>
         </div>
     </div>
-    <div class="column"></div>
+    <div class="column">
+        <div class="cubeContainer">
+            <div class="cube">
+                <div class="side front"></div>
+                <div class="side back"></div>
+                <div class="side left"></div>
+                <div class="side right"></div>
+                <div class="side top"></div>
+                <div class="side bottom"></div>
+            </div>
+            <div class="cube cubeSmall">
+                <div class="side front"></div>
+                <div class="side back"></div>
+                <div class="side left"></div>
+                <div class="side right"></div>
+                <div class="side top"></div>
+                <div class="side bottom"></div>
+            </div>
+        </div>
+    </div>
     <div class="column">
         <div id="profileInfo" class="widget">
             <img class="image" src="img/profilePic.jpg" alt="profilePic">
