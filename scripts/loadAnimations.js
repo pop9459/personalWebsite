@@ -107,7 +107,7 @@ export function backgroundIntroduce()
     return new Promise((resolve) => {
         background.classList.add("expandBackground");
         console.log("background expanded");
-        resolve();
+        setTimeout(resolve, 1000); 
     });
 }
 

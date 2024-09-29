@@ -39,9 +39,7 @@
                 <a href="" class="button">Assignments</a>
             </div>
         </div>
-    </div>
-    <div class="column">
-        <div class="cubeContainer">
+        <div class="widget cubeContainer">
             <div class="cube">
                 <div class="side front"></div>
                 <div class="side back"></div>
@@ -59,6 +57,8 @@
                 <div class="side bottom"></div>
             </div>
         </div>
+    </div>
+    <div class="column">
     </div>
     <div class="column">
         <div id="profileInfo" class="widget">

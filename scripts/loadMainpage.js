@@ -13,7 +13,7 @@ export function loadMainPageContent() {
 
 export function animateWidgets() {
     return new Promise((resolve) => {
-        var timeBetweenAnimations = 250; // Time between each widget animation
+        var timeBetweenAnimations = 300; // Time between each widget animation
 
         // animate horizontal widgets
         const horizontalWidgets = document.querySelectorAll(".topBar > div");
