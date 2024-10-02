@@ -89,7 +89,8 @@
     color: var(--themeBlue);
     text-align: center;
     text-decoration: none;
-    
+    font-size: inherit;
+
     border: 0.1rem solid transparent;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
     text-shadow: none;

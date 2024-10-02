@@ -35,8 +35,8 @@
         <div class="widget">
             <h1>MENU</h1>
             <div class="buttonMenu">
-                <a href="" class="button">About me</a>
-                <a href="" class="button">Assignments</a>
+                <input type="button" id="aboutMeButton" class="button" value="About me">
+                <input type="button" id="assignmentsButton" class="button" value="Assignments">
             </div>
         </div>
         <div class="widget cubeContainer">
@@ -58,7 +58,7 @@
             </div>
         </div>
     </div>
-    <div class="column">
+    <div id="centerContentDisplay" class="column">
     </div>
     <div class="column">
         <div id="profileInfo" class="widget">

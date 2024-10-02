@@ -1,5 +1,6 @@
 import {textSplash, backgroundIntroduce} from  "./loadAnimations.js";
 import {loadMainPageContent, animateWidgets} from "./loadMainpage.js";
+import { setupListeners } from "./buttons.js";
 import { startClock } from "./clock.js";
 
 window.onload = function() {
@@ -25,7 +26,8 @@ window.onload = function() {
     {
         // Load the main page content without animations
         backgroundIntroduce();
-        loadMainPageContent();  
+        loadMainPageContent()
+            .then(result => setupListeners());
     }
 
     //----------------start other things----------------
