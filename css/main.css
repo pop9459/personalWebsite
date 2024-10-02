@@ -29,6 +29,11 @@ body
     color: var(--themeBlue);
 }
 
+h1
+{
+    text-align: center;
+}
+
 #background 
 {
     position:fixed;
