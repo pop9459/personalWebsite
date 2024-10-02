@@ -1,17 +1,8 @@
-export function loadToContainer(containerID, pathToContent)
-{
-    fetch(pathToContent) // Fetch the content
-        .then(response => response.text()) // Get the response as text (HTML content)
-        .then(data => {
-            document.querySelector("#" + containerID).innerHTML = data; // Inject the content  
-            console.log(pathToContent + " loadedSuccessfully");   // Log success      
-        })
-        .catch(error => console.error('Error loading external HTML:', error));
-}
+import { loadToContainer } from "./loaders.js";
 
 export function clearContents(containerID)
 {
-
+    //TODO: Add a fade out animation
 }
 
 export function setupListeners() {

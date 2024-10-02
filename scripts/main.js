@@ -1,35 +1,29 @@
-import {textSplash, backgroundIntroduce} from  "./loadAnimations.js";
-import {loadMainPageContent, animateWidgets} from "./loadMainpage.js";
+import { textSplash, backgroundIntroduce, animateWidgets} from  "./animations.js";
+import { loadToContainer} from "./loaders.js";
 import { setupListeners } from "./buttons.js";
 import { startClock } from "./clock.js";
 
 window.onload = function() {
-    let doLoadAnimations = false; 
-    let doTextSplash = true;   
+    let doLoadAnimations = true; 
+    let doTextSplash = doLoadAnimations && true;   
 
-    if(doLoadAnimations) 
-    {
-        if(doTextSplash)
-        {
-            textSplash()
-                .then(result => backgroundIntroduce())
-                .then(result => loadMainPageContent())
-                .then(result => animateWidgets());
-        }
-        else{
-            backgroundIntroduce()
-                .then(result => loadMainPageContent())
-                .then(result => animateWidgets());
-        }
-    }
-    else
-    {
-        // Load the main page content without animations
-        backgroundIntroduce();
-        loadMainPageContent()
-            .then(result => setupListeners());
-    }
-
-    //----------------start other things----------------
-    startClock();
-};
+    Promise.all([
+        //show intro text splash
+        doTextSplash ? textSplash() : Promise.resolve("No text splash"),
+    ])
+    .then(() => Promise.all([
+        //introduce the background
+        backgroundIntroduce(),
+    ]))
+    .then(() => Promise.all([
+        //load the landing page content
+        loadToContainer("content", "html/landingPageContent.php"),
+    ]))
+    .then(() => Promise.all([
+        //animate and set up all elements
+        doLoadAnimations ? animateWidgets() : Promise.resolve("No animations"),
+        setupListeners(),
+        startClock(),
+    ]))
+    .catch(error => console.error("Error occurred: ", error));
+}
