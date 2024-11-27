@@ -89,15 +89,25 @@ export function textSplash()
             }, (index * textSeed) + 500);
         });
 
-        setTimeout(() => {
+        const clearTimeoutId = setTimeout(() => {
             // Remove the log container after the simulation is complete
             document.getElementById("textSplash").remove();
         }, messages.length * textSeed + 1000);
 
-        setTimeout(() => {
+        const resolveTimeout = setTimeout(() => {
             console.log("Text Splash completed");
             resolve();
         }, messages.length * textSeed + 1200);
+
+        const keyPressHandler = function (e) {
+            document.getElementById("textSplash").remove();
+            document.removeEventListener('keypress', keyPressHandler);
+            clearTimeout(clearTimeoutId);
+            clearTimeout(resolveTimeout);
+            resolve();
+        };
+
+        document.addEventListener('keypress', keyPressHandler);
     });
 }
 
