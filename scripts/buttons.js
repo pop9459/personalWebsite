@@ -1,3 +1,4 @@
+import { animateContainerWidgets } from "./animations.js";
 import { loadToContainer } from "./loaders.js";
 
 export function clearContents(containerID)
@@ -6,7 +7,10 @@ export function clearContents(containerID)
 }
 
 export function setupListeners() {
-    document.getElementById("aboutMeButton").onclick = function() { loadToContainer("centerContentDisplay" ,"html/aboutMe.php"); };
+    document.getElementById("aboutMeButton").onclick = function() { 
+        loadToContainer("centerContentDisplay" ,"html/aboutMe.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
 
     console.log("Buttons loaded successfully");
 }

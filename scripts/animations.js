@@ -156,3 +156,28 @@ export function animateWidgets() {
         resolve();
     });
 }
+
+export function animateContainerWidgets(containerID)
+{
+    return new Promise((resolve) => {
+        var timeBetweenAnimations = 300; // Time between each widget animation
+
+        const container = document.getElementById(containerID);
+        const widgets = container.children;
+
+        for (let i = 0; i < widgets.length; i++)
+        {
+            widgets[i].classList.add("hidden");
+        }
+        for (let i = 0; i < widgets.length; i++) 
+        {
+            setTimeout(() => {
+                widgets[i].classList.remove("hidden");
+                widgets[i].classList.add("expandVertical");
+            }, i * timeBetweenAnimations);
+        }
+
+        console.log("Widgets animated");  // Log success
+        resolve
+    });
+}
