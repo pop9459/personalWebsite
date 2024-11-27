@@ -45,6 +45,12 @@ h1
     z-index: -1;
 }
 
+.inLine
+{
+    display: flex;
+    flex-direction: row;
+}
+
 .inlineBlock
 {
     display: inline-block;
