@@ -33,10 +33,25 @@
     </div>
     <div class="column">
         <div class="widget">
+            <div class="buttonMenu">
+            <h1>MENU</h1>
             <h1>MENU</h1>
             <div class="buttonMenu">
+                <h1>MENU</h1>
+            <div class="buttonMenu">
                 <input type="button" id="aboutMeButton" class="button" value="About me">
-                <input type="button" id="assignmentsButton" class="button" value="Assignments">
+            </div>
+            <div class="buttonMenu">
+                <h2>PORTFOLIO</h2>
+                <h5>Prof. Skills</h5>
+                <input type="button" id="reflectionReportButton" class="button" value="Reflection Report">
+                <input type="button" id="studyCareerCoachingButton" class="button" value="Study Career Coaching">
+                <input type="button" id="feedbackFormsButton" class="button" value="Feedback Forms">
+                <input type="button" id="projectPlanButton" class="button" value="Project Plan">
+                <input type="button" id="communicationButton" class="button" value="Communication">
+                <input type="button" id="presentationButton" class="button" value="Presentation">
+                <input type="button" id="meetingTechniquesButton" class="button" value="Meeting Techniques">
+                <input type="button" id="edumundoAssignmentsButton" class="button" value="Edumundo Assignments">
             </div>
         </div>
         <div class="widget cubeContainer">

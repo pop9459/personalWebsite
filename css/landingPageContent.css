@@ -80,16 +80,20 @@
     width: 100%;
 }
 
-.button {
+.buttonMenu > *
+{
+    text-align: left;
     display: inline-block;
     background-color: transparent;
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     color: var(--themeBlue);
-    text-align: center;
-    text-decoration: none;
+    text-wrap: wrap;
+}
+
+.button {
     font-size: inherit;
+    padding: 1rem 0.5rem;
+    text-decoration: none;
 
     border: 0.1rem solid transparent;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
