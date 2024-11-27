@@ -99,7 +99,10 @@
                     <th>Class</th>
                     <td>Computer wizard</td>
                 </tr>
-
+                <tr>
+                    <th>Role</th>
+                    <td>10x full stack developer</td>
+                </tr>
             </table>
         </div>
         <div id="mediaLinks" class="widget">
