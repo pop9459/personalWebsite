@@ -122,27 +122,31 @@
         <div id="skills" class="widget">
             <div class="skill">
                 <h3>Linux</h3>
-                <?php displayProgressBar(5, 5); ?>
+                <?php displayProgressBar(6, 5); ?>
+            </div>
+            <div class="skill">
+                <h3>WebDev</h3>
+                <?php displayProgressBar(6, 3); ?>
+            </div>
+            <div class="skill">
+                <h3>GameDev</h3>
+                <?php displayProgressBar(6, 2); ?>
             </div>
             <div class="skill">
                 <h3>Git</h3>
-                <?php displayProgressBar(5, 4); ?>
-            </div>
-            <div class="skill">
-                <h3>HTML/CSS/JS</h3>
-                <?php displayProgressBar(5, 3); ?>
-            </div>
-            <div class="skill">
-                <h3>C#</h3>
-                <?php displayProgressBar(5, 3); ?>
-            </div>
-            <div class="skill">
-                <h3>Python</h3>
-                <?php displayProgressBar(5, 2); ?>
+                <?php displayProgressBar(6, 4); ?>
             </div>
             <div class="skill">
                 <h3>Docker</h3>
-                <?php displayProgressBar(5, 1); ?>
+                <?php displayProgressBar(6, 1); ?>
+            </div>
+            <div class="skill">
+                <h3>Databases</h3>
+                <?php displayProgressBar(6, 1); ?>
+            </div>
+            <div class="skill">
+                <h3>BeingCool</h3>
+                <?php displayProgressBar(6, 6); ?>
             </div>
         </div>
     </div>
