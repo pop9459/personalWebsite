@@ -34,11 +34,7 @@
     <div class="column">
         <div class="widget">
             <div class="buttonMenu">
-            <h1>MENU</h1>
-            <h1>MENU</h1>
-            <div class="buttonMenu">
                 <h1>MENU</h1>
-            <div class="buttonMenu">
                 <input type="button" id="aboutMeButton" class="button" value="About me">
             </div>
             <div class="buttonMenu">
