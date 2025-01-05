@@ -1,8 +1,10 @@
 <div class="widget">
     <h1>Project Plan</h1>
     <div class="inLine">
-        <h4>Competence:</h4>
-        <p>Ethics and project based work practices</p>
+        <h4>Competences:</h4>
+        <ul>
+            <li>Ethics and project based work practices</li>
+        </ul>
     </div>
 </div>
 <div class="widget">

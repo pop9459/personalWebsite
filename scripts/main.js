@@ -4,7 +4,7 @@ import { setupListeners } from "./buttons.js";
 import { startClock } from "./clock.js";
 
 window.onload = function() {
-    let doLoadAnimations = false; 
+    let doLoadAnimations = true; 
     let doTextSplash = doLoadAnimations && true;   
 
     Promise.all([
