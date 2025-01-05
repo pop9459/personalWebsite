@@ -33,10 +33,21 @@
     </div>
     <div class="column">
         <div class="widget">
-            <h1>MENU</h1>
             <div class="buttonMenu">
+                <h1>MENU</h1>
                 <input type="button" id="aboutMeButton" class="button" value="About me">
-                <input type="button" id="assignmentsButton" class="button" value="Assignments">
+            </div>
+            <div class="buttonMenu">
+                <h2>PORTFOLIO</h2>
+                <h5>Prof. Skills</h5>
+                <input type="button" id="reflectionReportButton" class="button" value="Reflection Report">
+                <input type="button" id="studyCareerCoachingButton" class="button" value="Study Career Coaching">
+                <input type="button" id="feedbackFormsButton" class="button" value="Feedback Forms">
+                <input type="button" id="projectPlanButton" class="button" value="Project Plan">
+                <input type="button" id="communicationButton" class="button" value="Communication">
+                <input type="button" id="presentationButton" class="button" value="Presentation">
+                <input type="button" id="meetingTechniquesButton" class="button" value="Meeting Techniques">
+                <input type="button" id="edumundoAssignmentsButton" class="button" value="Edumundo Assignments">
             </div>
         </div>
         <div class="widget cubeContainer">
@@ -84,7 +95,10 @@
                     <th>Class</th>
                     <td>Computer wizard</td>
                 </tr>
-
+                <tr>
+                    <th>Role</th>
+                    <td>10x full stack developer</td>
+                </tr>
             </table>
         </div>
         <div id="mediaLinks" class="widget">
@@ -108,27 +122,31 @@
         <div id="skills" class="widget">
             <div class="skill">
                 <h3>Linux</h3>
-                <?php displayProgressBar(5, 5); ?>
+                <?php displayProgressBar(6, 5); ?>
+            </div>
+            <div class="skill">
+                <h3>WebDev</h3>
+                <?php displayProgressBar(6, 3); ?>
+            </div>
+            <div class="skill">
+                <h3>GameDev</h3>
+                <?php displayProgressBar(6, 2); ?>
             </div>
             <div class="skill">
                 <h3>Git</h3>
-                <?php displayProgressBar(5, 4); ?>
-            </div>
-            <div class="skill">
-                <h3>HTML/CSS/JS</h3>
-                <?php displayProgressBar(5, 3); ?>
-            </div>
-            <div class="skill">
-                <h3>C#</h3>
-                <?php displayProgressBar(5, 3); ?>
-            </div>
-            <div class="skill">
-                <h3>Python</h3>
-                <?php displayProgressBar(5, 2); ?>
+                <?php displayProgressBar(6, 4); ?>
             </div>
             <div class="skill">
                 <h3>Docker</h3>
-                <?php displayProgressBar(5, 1); ?>
+                <?php displayProgressBar(6, 1); ?>
+            </div>
+            <div class="skill">
+                <h3>Databases</h3>
+                <?php displayProgressBar(6, 1); ?>
+            </div>
+            <div class="skill">
+                <h3>BeingCool</h3>
+                <?php displayProgressBar(6, 6); ?>
             </div>
         </div>
     </div>

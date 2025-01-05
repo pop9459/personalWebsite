@@ -1,0 +1,5 @@
+.widget > embed {
+    width: 100%;
+    height: 90vh;
+    border: 0;
+}

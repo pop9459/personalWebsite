@@ -1,7 +1,7 @@
 #landingPageContent
 {
     display: grid;
-    grid-template-columns: 15vw 1fr 24vw;
+    grid-template-columns: 18vw 1fr 22vw;
     padding: 1.5rem;
 }
 
@@ -15,8 +15,10 @@
 
 #profileInfo table th
 {
+    padding: 0.25rem 0;
     padding-right: 2rem;
     text-align: left;
+    vertical-align: top;
     font-weight: bolder;
 }
 
@@ -80,16 +82,20 @@
     width: 100%;
 }
 
-.button {
+.buttonMenu > *
+{
+    text-align: left;
     display: inline-block;
     background-color: transparent;
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     color: var(--themeBlue);
-    text-align: center;
-    text-decoration: none;
+    text-wrap: wrap;
+}
+
+.button {
     font-size: inherit;
+    padding: 0.75rem 0.5rem;
+    text-decoration: none;
 
     border: 0.1rem solid transparent;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);

@@ -89,15 +89,25 @@ export function textSplash()
             }, (index * textSeed) + 500);
         });
 
-        setTimeout(() => {
+        const clearTimeoutId = setTimeout(() => {
             // Remove the log container after the simulation is complete
             document.getElementById("textSplash").remove();
         }, messages.length * textSeed + 1000);
 
-        setTimeout(() => {
+        const resolveTimeout = setTimeout(() => {
             console.log("Text Splash completed");
             resolve();
         }, messages.length * textSeed + 1200);
+
+        const keyPressHandler = function (e) {
+            document.getElementById("textSplash").remove();
+            document.removeEventListener('keypress', keyPressHandler);
+            clearTimeout(clearTimeoutId);
+            clearTimeout(resolveTimeout);
+            resolve();
+        };
+
+        document.addEventListener('keypress', keyPressHandler);
     });
 }
 
@@ -144,5 +154,30 @@ export function animateWidgets() {
         }
         console.log("Widgets animated");  // Log success
         resolve();
+    });
+}
+
+export function animateContainerWidgets(containerID)
+{
+    return new Promise((resolve) => {
+        var timeBetweenAnimations = 300; // Time between each widget animation
+
+        const container = document.getElementById(containerID);
+        const widgets = container.children;
+
+        for (let i = 0; i < widgets.length; i++)
+        {
+            widgets[i].classList.add("hidden");
+        }
+        for (let i = 0; i < widgets.length; i++) 
+        {
+            setTimeout(() => {
+                widgets[i].classList.remove("hidden");
+                widgets[i].classList.add("expandVertical");
+            }, i * timeBetweenAnimations);
+        }
+
+        console.log("Widgets animated");  // Log success
+        resolve
     });
 }

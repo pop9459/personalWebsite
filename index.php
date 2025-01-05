@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/animations.css" type="text/css">
     <link rel="stylesheet" href="css/loadScreen.css" type="text/css">
     <link rel="stylesheet" href="css/cube.css" type="text/css">
+    <link rel="stylesheet" href="css/portfolioItems.css" type="text/css">
 
     <script src="scripts/main.js" type="module"></script>
 </head>
