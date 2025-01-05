@@ -1,11 +1,12 @@
 export function startClock() {
     const today = new Date();
     let y = today.getFullYear();
-    let mo = today.getMonth();
-    let d = today.getDay();
+    let mo = today.getMonth()+1;
+    let d = today.getDate();
     let h = today.getHours();
     let m = today.getMinutes();
     let s = today.getSeconds();
+    h = padDigits(h);
     m = padDigits(m);
     s = padDigits(s);
     mo = padDigits(mo);
