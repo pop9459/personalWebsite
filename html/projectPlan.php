@@ -3,7 +3,8 @@
     <div class="inLine">
         <h4>Competences:</h4>
         <ul>
-            <li>Ethics and project based work practices</li>
+            <li>Ethics</li>
+            <li>Project based work practices</li>
         </ul>
     </div>
 </div>
