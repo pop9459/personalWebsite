@@ -71,8 +71,7 @@ export function textSplash()
         'Starting system...'
     ];
     
-    const logContainer = document.createElement("div");
-    logContainer.id = "textSplash";
+    const logContainer = document.getElementById("textSplash");
     document.body.appendChild(logContainer);
 
     let textSeed = 15;
@@ -91,7 +90,7 @@ export function textSplash()
 
         const clearTimeoutId = setTimeout(() => {
             // Remove the log container after the simulation is complete
-            document.getElementById("textSplash").remove();
+            logContainer.innerHTML = "";
         }, messages.length * textSeed + 1000);
 
         const resolveTimeout = setTimeout(() => {
@@ -100,7 +99,7 @@ export function textSplash()
         }, messages.length * textSeed + 1200);
 
         const keyPressHandler = function (e) {
-            document.getElementById("textSplash").remove();
+            logContainer.innerHTML = "";
             document.removeEventListener('keypress', keyPressHandler);
             clearTimeout(clearTimeoutId);
             clearTimeout(resolveTimeout);
