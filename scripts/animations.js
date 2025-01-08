@@ -90,7 +90,7 @@ export function textSplash()
 
         const clearTimeoutId = setTimeout(() => {
             // Remove the log container after the simulation is complete
-            logContainer.innerHTML = "";
+            logContainer.remove();
         }, messages.length * textSeed + 1000);
 
         const resolveTimeout = setTimeout(() => {
@@ -99,7 +99,7 @@ export function textSplash()
         }, messages.length * textSeed + 1200);
 
         const keyPressHandler = function (e) {
-            logContainer.innerHTML = "";
+            logContainer.remove();
             document.removeEventListener('keypress', keyPressHandler);
             clearTimeout(clearTimeoutId);
             clearTimeout(resolveTimeout);

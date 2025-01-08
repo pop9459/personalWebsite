@@ -1,4 +1,4 @@
-import { textSplash, backgroundIntroduce, animateWidgets} from  "./animations.js";
+import { textSplash, backgroundIntroduce, animateWidgets, animateContainerWidgets} from  "./animations.js";
 import { loadToContainer} from "./loaders.js";
 import { setupListeners } from "./buttons.js";
 import { startClock } from "./clock.js";
@@ -25,5 +25,12 @@ window.onload = function() {
         setupListeners(),
         startClock(),
     ]))
+    .then(() => new Promise(resolve => setTimeout(resolve, 1500))) // delay 1.5 second
+    .then(() => Promise.all([
+        //load defalut page
+        loadToContainer("centerContentDisplay" ,"html/aboutMe.php")
+        .then(() => animateContainerWidgets("centerContentDisplay")),
+    ]))
+
     .catch(error => console.error("Error occurred: ", error));
 }
