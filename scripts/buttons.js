@@ -9,41 +9,41 @@ export function clearContents(containerID)
 export function setupListeners() {
     // MENU BUTTONS
     document.getElementById("aboutMeButton").onclick = function() { 
-        loadToContainer("centerContentDisplay" ,"html/aboutMe.php")
+        loadToContainer("centerContentDisplay" ,"phpContent/aboutMe.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
 
     // PORTFOLIO BUTTONS
     document.getElementById("reflectionReportButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "html/reflectionReport.php")
+        loadToContainer("centerContentDisplay", "phpContent/reflectionReport.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
     document.getElementById("studyCareerCoachingButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "html/studyCareerCoaching.php")
+        loadToContainer("centerContentDisplay", "phpContent/studyCareerCoaching.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
     document.getElementById("feedbackFormsButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "html/feedbackForms.php")
+        loadToContainer("centerContentDisplay", "phpContent/feedbackForms.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
     document.getElementById("projectPlanButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "html/projectPlan.php")
+        loadToContainer("centerContentDisplay", "phpContent/projectPlan.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
     document.getElementById("communicationButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "html/communication.php")
+        loadToContainer("centerContentDisplay", "phpContent/communication.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
     document.getElementById("presentationButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "html/presentation.php")
+        loadToContainer("centerContentDisplay", "phpContent/presentation.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
     document.getElementById("meetingTechniquesButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "html/meetingTechniques.php")
+        loadToContainer("centerContentDisplay", "phpContent/meetingTechniques.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
     document.getElementById("edumundoAssignmentsButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "html/edumundoAssignments.php")
+        loadToContainer("centerContentDisplay", "phpContent/edumundoAssignments.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
 

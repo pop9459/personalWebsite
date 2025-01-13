@@ -17,7 +17,7 @@ window.onload = function() {
     ]))
     .then(() => Promise.all([
         //load the landing page content
-        loadToContainer("content", "html/landingPageContent.php"),
+        loadToContainer("content", "phpContent/landingPageContent.php"),
     ]))
     .then(() => Promise.all([
         //animate and set up all elements
@@ -28,7 +28,7 @@ window.onload = function() {
     .then(() => new Promise(resolve => setTimeout(resolve, 1500))) // delay 1.5 second
     .then(() => Promise.all([
         //load defalut page
-        loadToContainer("centerContentDisplay" ,"html/aboutMe.php")
+        loadToContainer("centerContentDisplay" ,"phpContent/aboutMe.php")
         .then(() => animateContainerWidgets("centerContentDisplay")),
     ]))
 
