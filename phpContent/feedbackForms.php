@@ -29,7 +29,10 @@
 </div>
 <div class="widget">
     <h2>Alex</h2>
-    <p>to be received</p>
+    <p>Peter, I’ve noticed your exceptional ability to handle complex tasks and your willingness to help others with issues like bug fixing and quality assurance. Even when facing challenges, you consistently deliver high-quality work and meet all our design phase requirements. 
+This gives me great confidence in you as a groupmate. It’s reassuring to know I can rely on you, making our collaboration enjoyable. 
+Your consistent effort and dependability have greatly improved our group’s workflow and overall quality, and your supportive nature fosters a positive team atmosphere. 
+I hope to see you maintain this dedication in future projects, and I look forward to the possibility of working together again.</p>
 </div>
 <div class="widget">
     <h2>Kyan</h2>
