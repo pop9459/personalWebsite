@@ -17,10 +17,10 @@
     <embed src="profSkillsPortfolio/meetingTechniques/EvalForm_FromUgo.pdf" type="application/pdf">
 </div>
 <div class="widget">
-    <embed src="profSkillsPortfolio/meetingTechniques/EvalForm_FromUgo.pdf" type="application/pdf">
+    <embed src="profSkillsPortfolio/meetingTechniques/EvalForm_FromKyan.pdf" type="application/pdf">
 </div>
 <div class="widget">
-    <embed src="profSkillsPortfolio/meetingTechniques/EvalForm_FromUgo.pdf" type="application/pdf">
+    <embed src="profSkillsPortfolio/meetingTechniques/EvalForm_FromEliza.pdf" type="application/pdf">
 </div>
 <div class="widget">
     <h1>Minutes of meeting</h1>
