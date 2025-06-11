@@ -9,5 +9,5 @@
     </div>
 </div>
 <div class="widget">
-    <embed src="profSkillsPortfolio/edumundoAssignments/Portfolio_Edumundo_2024_2025.pdf" type="application/pdf">
+    <embed src="src/profSkillsPortfolio/edumundoAssignments/Portfolio_Edumundo_2024_2025.pdf" type="application/pdf">
 </div>

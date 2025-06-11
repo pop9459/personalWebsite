@@ -8,5 +8,5 @@
     </div>
 </div>
 <div class="widget">
-    <embed src="profSkillsPortfolio/communication/interviewSchedule.pdf" type="application/pdf">
+    <embed src="src/profSkillsPortfolio/communication/interviewSchedule.pdf" type="application/pdf">
 </div>
