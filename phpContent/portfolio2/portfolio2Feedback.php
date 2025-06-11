@@ -1,7 +1,7 @@
 <div class="widget">
     <h1>Portfolio 2 Feedback</h1>
     <p>
-        This is a collection of six 360-degree feedback forms I have collecteed from various colleagues and peers.
+        This is a collection of six 360-degree feedback forms I have collected from various colleagues and peers.
         The purpose of this is to help me understand my myself from an external perspective.
         It may help me where other people see my strengths and weaknesses, and how I can improve in the future.
     </p>
