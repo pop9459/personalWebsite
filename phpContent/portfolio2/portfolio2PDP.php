@@ -1,6 +1,9 @@
 <div class="widget">
     <h1>Portfolio 2 PDP</h1>
-    <p>Placeholder for a short description of the PDP content.</p>
+    <p>
+        This section showcases the personal development plan I set for myself in the beginning of fourth period.
+        It includes its full description and the results of the goals I set for myself.
+    </p>
 </div>
 <div class="widget">
     <h2>My PDP</h2>
@@ -12,16 +15,25 @@
 <div class="widget">
     <h3>Development goal 1:</h3>
     <p>Goal result description</p>
-    <a href="https://github.com/Pharrellstu/Project-Innovate/tree/develop/Campus-Link/campuslink">Flutter app I helped to levelop</a>
+    <a href="https://github.com/Pharrellstu/Project-Innovate/tree/develop/Campus-Link/campuslink">Flutter app I helped to develop</a>
 </div>
 <div class="widget">
     <h3>Development goal 2:</h3>
-    <p>Goal result description</p>
+    <p>
+        For this goal I wanted to improve my dutch language vocabulary.
+        To do this I used the Duolingo app and set a goal to to 1 lesson per day for the whole period
+        I had one day off during the start but after that I managed to keep up with the goal.
+    </p>
     <img src="src/profSkillsPortfolio2/PDP/duolingoMay.jpg" alt="duolingoCalendarMay">
     <img src="src/profSkillsPortfolio2/PDP/duolingoJune.jpg" alt="duolingoCalendarJune">
 </div>
 <div class="widget">    
     <h3>Development goal 3:</h3>
-    <p>Goal result description</p>
+    <p>
+        For this goal I wanted to improve my physical shape.
+        Unfortunately I did not have much luck with this one.
+        I started out strong, but then I got sick and after that I just had too much work back log.
+        Despite this I am keeping this in mind and want to try again in the future.
+    </p>
     <embed src="src/profSkillsPortfolio2/PDP/ExerciseTracker.pdf" type="application/pdf">
 </div>
