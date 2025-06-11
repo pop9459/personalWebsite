@@ -14,7 +14,13 @@
 </div>
 <div class="widget">
     <h3>Development goal 1:</h3>
-    <p>Goal result description</p>
+    <p>
+        For the first goal I wanted to add something to my technical skills.
+        Since our main project was revolving around a mobile app I decided this is a good opportunity to learn Flutter.
+        I chose Flutter because it has been on my radar for a while and I wanted to learn it.
+        Despite the app not being absolutely perfect, I still learned a lot about Flutter and Dart.
+        I am certain this is a valuable expansion of my skill-set.
+    </p>
     <a href="https://github.com/Pharrellstu/Project-Innovate/tree/develop/Campus-Link/campuslink">Flutter app I helped to develop</a>
 </div>
 <div class="widget">
