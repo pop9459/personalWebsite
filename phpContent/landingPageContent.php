@@ -39,7 +39,20 @@
             </div>
             <div class="buttonMenu">
                 <h2>PORTFOLIO</h2>
-                <h5>Prof. Skills</h5>
+
+                <h5>Prof. Skills 2</h5>
+                <input type="button" id="portfolio2ReflectionButton" class="button" value="Reflection">
+                <input type="button" id="portfolio2FeedbackButton" class="button" value="Feedback">
+                <input type="button" id="portfolio2PDPButton" class="button" value="PDP">
+                <input type="button" id="portfolio2ProjectPlanButton" class="button" value="Project Plan">
+                <input type="button" id="portfolio2CommunicationButton" class="button" value="Communication">
+                <input type="button" id="portfolio2PresentingButton" class="button" value="Presenting">
+                <input type="button" id="portfolio2EdumundoAssignmentsButton" class="button" value="Edumundo Assignments">
+                <input type="button" id="portfolio2MeetingTechniquesButton" class="button" value="Meeting Techniques">
+                <input type="button" id="portfolio2FinalInterviewButton" class="button" value="Final Interview">
+                
+                <hr>
+                <h5>Prof. Skills 1</h5>
                 <input type="button" id="reflectionReportButton" class="button" value="Reflection Report">
                 <input type="button" id="studyCareerCoachingButton" class="button" value="Study Career Coaching">
                 <input type="button" id="feedbackFormsButton" class="button" value="Feedback Forms">

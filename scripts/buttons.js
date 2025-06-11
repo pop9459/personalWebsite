@@ -13,7 +13,45 @@ export function setupListeners() {
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
 
-    // PORTFOLIO BUTTONS
+    // PORTFOLIO 2 BUTTONS
+    document.getElementById("portfolio2ReflectionButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/portfolio2Reflection.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("portfolio2FeedbackButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/portfolio2Feedback.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("portfolio2PDPButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/portfolio2PDP.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("portfolio2ProjectPlanButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/portfolio2ProjectPlan.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("portfolio2CommunicationButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/portfolio2Communication.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("portfolio2PresentingButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/portfolio2Presenting.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("portfolio2EdumundoAssignmentsButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/portfolio2EdumundoAssignments.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("portfolio2MeetingTechniquesButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/portfolio2MeetingTechniques.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("portfolio2FinalInterviewButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/portfolio2FinalInterview.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+
+    // PORTFOLIO 1 BUTTONS
     document.getElementById("reflectionReportButton").onclick = function() {
         loadToContainer("centerContentDisplay", "phpContent/reflectionReport.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
