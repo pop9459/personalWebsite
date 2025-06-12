@@ -3,11 +3,17 @@
 </div>
 <div class="widget">
     <p>
-        This is the project plan I created for my project Innovate during the fourth period.
-        TODO - add advice report
+        This section contains the key planning and advisory documents for the CampusLink project.
+        It includes the final project plan, outlining goals, scope, timeline, roles, and technical requirements.
+        It also features the technical advisory report, which evaluates the design and implementation of the project.
+        This also offers clear recommendations for future development.
     </p>
 </div>
 <div class="widget">
     <h2>Project Plan Document</h2>
-    <embed src="src/profSkillsPortfolio2/ProjectPlan/ProjectPlanIT1A.pdf" type="application/pdf">
+    <embed src="src/profSkillsPortfolio2/ProjectPlan/ProjectPlan.pdf" type="application/pdf">
+</div>
+<div class="widget">
+    <h2>Advice Report</h2>
+    <embed src="src/profSkillsPortfolio2/ProjectPlan/TechnicalAdvisoryReport.pdf" type="application/pdf">
 </div>
