@@ -42,9 +42,9 @@
                 <h2>MY PROJECTS</h2>
                 <input type="button" id="personalWebsiteButton" class="button" value="Personal Website">
                 <input type="button" id="maturityProjectButton" class="button" value="Maturity Project">
-                <input type="button" id="SunnySocksWebsiteButton" class="button" value="Sunny Socks Website">
-                <input type="button" id="ColorNightmareButton" class="button" value="Color Nightmare">
-                <input type="button" id="CampusLinkButton" class="button" value="CampusLink">
+                <input type="button" id="sunnySocksWebsiteButton" class="button" value="Sunny Socks Website">
+                <input type="button" id="colorNightmareButton" class="button" value="Color Nightmare">
+                <input type="button" id="campusLinkButton" class="button" value="CampusLink">
             </div>
             <hr>
             <div class="buttonMenu">

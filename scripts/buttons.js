@@ -22,16 +22,16 @@ export function setupListeners() {
         loadToContainer("centerContentDisplay", "phpContent/myProjects/maturityProject.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
-    document.getElementById("SunnySocksWebsiteButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/myProjects/SunnySocksWebsite.php")
+    document.getElementById("sunnySocksWebsiteButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/myProjects/sunnySocksWebsite.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
-    document.getElementById("ColorNightmareButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/myProjects/ColorNightmare.php")
+    document.getElementById("colorNightmareButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/myProjects/colorNightmare.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
-    document.getElementById("CampusLinkButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/myProjects/CampusLink.php")
+    document.getElementById("campusLinkButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/myProjects/campusLink.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
 
