@@ -13,6 +13,28 @@ export function setupListeners() {
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
 
+    // MY PROJECTS BUTTONS
+    document.getElementById("personalWebsiteButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/myProjects/personalWebsite.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("maturityProjectButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/myProjects/maturityProject.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("SunnySocksWebsiteButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/myProjects/SunnySocksWebsite.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("ColorNightmareButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/myProjects/ColorNightmare.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+    document.getElementById("CampusLinkButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/myProjects/CampusLink.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
+
     // PORTFOLIO 2 BUTTONS
     document.getElementById("portfolio2ReflectionButton").onclick = function() {
         loadToContainer("centerContentDisplay", "phpContent/portfolio2/portfolio2Reflection.php")

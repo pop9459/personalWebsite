@@ -37,8 +37,18 @@
                 <h1>MENU</h1>
                 <input type="button" id="aboutMeButton" class="button" value="About me">
             </div>
+            <hr>
             <div class="buttonMenu">
-                <h2>PORTFOLIO</h2>
+                <h2>MY PROJECTS</h2>
+                <input type="button" id="personalWebsiteButton" class="button" value="Personal Website">
+                <input type="button" id="maturityProjectButton" class="button" value="Maturity Project">
+                <input type="button" id="SunnySocksWebsiteButton" class="button" value="Sunny Socks Website">
+                <input type="button" id="ColorNightmareButton" class="button" value="Color Nightmare">
+                <input type="button" id="CampusLinkButton" class="button" value="CampusLink">
+            </div>
+            <hr>
+            <div class="buttonMenu">
+                <h2>PORTFOLIO</h2>  
 
                 <h5>Prof. Skills 2</h5>
                 <input type="button" id="portfolio2ReflectionButton" class="button" value="Reflection">
@@ -51,7 +61,6 @@
                 <input type="button" id="portfolio2MeetingTechniquesButton" class="button" value="Meeting Techniques">
                 <input type="button" id="portfolio2FinalInterviewButton" class="button" value="Final Interview">
                 
-                <hr>
                 <h5>Prof. Skills 1</h5>
                 <input type="button" id="reflectionReportButton" class="button" value="Reflection Report">
                 <input type="button" id="studyCareerCoachingButton" class="button" value="Study Career Coaching">

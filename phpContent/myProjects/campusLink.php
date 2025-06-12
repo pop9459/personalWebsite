@@ -1,0 +1,4 @@
+<div class="widget">
+  <h1>CampusLink</h1>
+  <p>This is placeholder text for the CampusLink project.</p>
+</div>
