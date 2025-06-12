@@ -43,6 +43,7 @@
                 <input type="button" id="personalWebsiteButton" class="button" value="Personal Website">
                 <input type="button" id="maturityProjectButton" class="button" value="Maturity Project">
                 <input type="button" id="sunnySocksWebsiteButton" class="button" value="Sunny Socks Website">
+                <input type="button" id="battlebotButton" class="button" value="Project BattleBot">
                 <input type="button" id="campusLinkButton" class="button" value="CampusLink">
             </div>
             <hr>

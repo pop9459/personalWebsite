@@ -30,6 +30,10 @@ export function setupListeners() {
         loadToContainer("centerContentDisplay", "phpContent/myProjects/campusLink.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
+    document.getElementById("battlebotButton").onclick = function() {
+        loadToContainer("centerContentDisplay", "phpContent/myProjects/battlebot.php")
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+    };
 
     // PORTFOLIO 2 BUTTONS
     document.getElementById("portfolio2ReflectionButton").onclick = function() {

@@ -34,10 +34,11 @@ h1
     text-align: center;
 }
 
-img
+img, video, embed, iframe
 {
     max-width: 100%;
     height: auto;
+    max-height: 90vh;
 }
 
 #background 
