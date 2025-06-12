@@ -26,10 +26,6 @@ export function setupListeners() {
         loadToContainer("centerContentDisplay", "phpContent/myProjects/sunnySocksWebsite.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
     };
-    document.getElementById("colorNightmareButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/myProjects/colorNightmare.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
     document.getElementById("campusLinkButton").onclick = function() {
         loadToContainer("centerContentDisplay", "phpContent/myProjects/campusLink.php")
         .then(() => animateContainerWidgets("centerContentDisplay"));
