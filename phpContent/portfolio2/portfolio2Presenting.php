@@ -1,5 +1,11 @@
 <div class="widget">
     <h1>Portfolio 2 Presenting</h1>
     <p>Placeholder for a short description of the presenting content.</p>
-    <embed src="../profSkillsPortfolio2/Presenting/index.html" width="100%" height="600px"></embed>
+    
+    <div class="widget">
+        <h2>404 Not Found</h2>
+        <!-- Yes, I lost the paper -->
+        <p>The content you are looking for is not available.</p>
+    </div>
+
 </div>

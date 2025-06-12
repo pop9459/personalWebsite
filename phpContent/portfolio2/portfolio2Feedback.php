@@ -26,3 +26,7 @@
     <h2>Feedback from Pharell</h2>
     <embed src="src/profSkillsPortfolio2/Feedback/360fromPharell.pdf" type="application/pdf">
 </div>
+<div class="widget">
+    <h2>Feedback from Airaa</h2>
+    <embed src="src/profSkillsPortfolio2/Feedback/360fromAiraa.pdf" type="application/pdf">
+</div>
