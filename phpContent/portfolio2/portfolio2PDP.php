@@ -1,6 +1,8 @@
 <div class="widget">
-    <h1>Portfolio 2 PDP</h1>
-    <p>
+  <h1>Portfolio 2 PDP</h1>
+</div>
+<div class="widget">
+  <p>
         This section showcases the personal development plan I set for myself in the beginning of fourth period.
         It includes its full description and the results of the goals I set for myself.
     </p>

@@ -1,5 +1,7 @@
 <div class="widget">
     <h1>Portfolio 2 Presenting</h1>
+</div>
+<div class="widget">
     <p>Placeholder for a short description of the presenting content.</p>
     
     <div class="widget">

@@ -1,5 +1,7 @@
 <div class="widget">
     <h1>Presentation</h1>
+</div>
+<div class="widget">
     <div class="inLine">
         <h4>Competences:</h4>
         <ul>

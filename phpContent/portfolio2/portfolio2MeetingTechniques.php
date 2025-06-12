@@ -1,6 +1,8 @@
 <div class="widget">
-    <h1>Portfolio 2 Meeting Techniques</h1>
-    <p>
+  <h1>Portfolio 2 Meeting Techniques</h1>
+</div>
+<div class="widget">
+  <p>
         This is a collection of documents related to meetings I was a part of during the last period.
         To convey information and make decisions collectively, meetings are a crucial part of any project.
         Here I have listed the meeting agenda I created and the minutes of the meeting I chaired.

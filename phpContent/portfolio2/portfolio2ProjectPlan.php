@@ -1,5 +1,7 @@
 <div class="widget">
     <h1>Portfolio 2 Project Plan</h1>
+</div>
+<div class="widget">
     <p>
         This is the project plan I created for my project Innovate during the fourth period.
         TODO - add advice report

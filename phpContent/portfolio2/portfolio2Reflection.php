@@ -1,5 +1,7 @@
 <div class="widget">
     <h1>Portfolio 2 Reflection</h1>
+</div>
+<div class="widget">
     <p>
         This is a reflection report on my first year of studying at IT at the university of NHL Stenden in Emmen.
         It is mostly tailored to include all te requirements from the checklist provided by my lecturer. 

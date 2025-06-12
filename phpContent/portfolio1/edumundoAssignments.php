@@ -1,6 +1,8 @@
 <div class="widget">
-    <h1>Edumundo Assignments</h1>
-    <div class="inLine">
+  <h1>Edumundo Assignments</h1>
+</div>
+<div class="widget">
+  <div class="inLine">
         <h4>Competences:</h4>
         <ul>
             <li>Personal leadership</li>

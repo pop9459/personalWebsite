@@ -1,5 +1,7 @@
 <div class="widget">
     <h1>About Me</h1>
+</div>
+<div class="widget">
     <p>
         Hi, I’m Peter, an aspiring IT professional currently studying Information Technology at NHL Stenden. I thrive in collaborative, problem-solving environments where I can apply my technical skills and creativity to tackle challenges.
     </p>

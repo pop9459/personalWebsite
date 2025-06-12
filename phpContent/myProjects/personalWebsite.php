@@ -1,5 +1,7 @@
 <div class="widget">
     <h1>Personal Website</h1>
+</div>
+<div class="widget">
     <p>This project is the very website you are currently viewing. It showcases my skills and projects. You can find the source code and more details on GitHub.</p>
     <p>Built using only: HTML, CSS, JavaScript, PHP</p>
 </div>
