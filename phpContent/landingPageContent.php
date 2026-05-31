@@ -31,6 +31,9 @@
         </div>
         <div class="widget spacer cutCornerBR"></div>
     </div>
+
+    /* Left collumn */
+
     <div class="column">
         <div class="widget">
             <div class="buttonMenu">
@@ -95,8 +98,15 @@
             </div>
         </div>
     </div>
+
+    /* Center collumn */
+
     <div id="centerContentDisplay" class="column">
+      /* Gets updated dynamically */
     </div>
+
+    /* Right collumn */
+
     <div class="column">
         <div id="profileInfo" class="widget">
             <img class="image" src="src/img/profilePic.jpg" alt="profilePic">
