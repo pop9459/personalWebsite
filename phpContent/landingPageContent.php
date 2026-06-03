@@ -1,23 +1,24 @@
 <?php
-    function getMyAge()
-    {
-        //function for auto determining my age to be displayed in the stats
-        $birthDateObject = new DateTime("2004-07-15");
-        $today = new DateTime();
-        return $today->diff($birthDateObject)->y;
-    }
+function getMyAge()
+{
+    //function for auto determining my age to be displayed in the stats
+    $birthDateObject = new DateTime("2004-07-15");
+    $today = new DateTime();
+    return $today->diff($birthDateObject)->y;
+}
 
-    function displayProgressBar($totalSections, $fullSections) {
-        echo "<div class='progressBar'>";
-        for ($i = 0; $i < $totalSections; $i++) {
-            if ($i < $fullSections) {
-                echo "<div class='progressSectionFull'></div>";
-            } else {
-                echo "<div class='progressSection'></div>";
-            }
+function displayProgressBar($totalSections, $fullSections)
+{
+    echo "<div class='progressBar'>";
+    for ($i = 0; $i < $totalSections; $i++) {
+        if ($i < $fullSections) {
+            echo "<div class='progressSectionFull'></div>";
+        } else {
+            echo "<div class='progressSection'></div>";
         }
-        echo "</div>";
     }
+    echo "</div>";
+}
 ?>
 
 <div id="landingPageContent">
@@ -25,14 +26,14 @@
         <div class="widget spacer cutCornerBL"></div>
         <div class="inlineBlock">
             <div id="clock" class="widget">
-                <div class='time'>00:00:00</div> 
+                <div class='time'>00:00:00</div>
                 <div class='date'>00/00/0000</div>
             </div>
         </div>
         <div class="widget spacer cutCornerBR"></div>
     </div>
 
-    /* Left collumn */
+    <!-- Left collumn -->
 
     <div class="column">
         <div class="widget">
@@ -51,7 +52,7 @@
             </div>
             <hr>
             <div class="buttonMenu">
-                <h2>PORTFOLIO</h2>  
+                <h2>PORTFOLIO</h2>
 
                 <details>
                     <summary>Prof. Skills 2</summary>
@@ -65,7 +66,7 @@
                     <input type="button" id="portfolio2MeetingTechniquesButton" class="button" value="Meeting Techniques">
                     <input type="button" id="portfolio2FinalInterviewButton" class="button" value="Final Interview">
                 </details>
-                
+
                 <details>
                     <summary>Prof. Skills 1</summary>
                     <input type="button" id="reflectionReportButton" class="button" value="Reflection Report">
@@ -99,13 +100,13 @@
         </div>
     </div>
 
-    /* Center collumn */
+    <!-- denter collumn  -->
 
     <div id="centerContentDisplay" class="column">
-      /* Gets updated dynamically */
+        <!-- Gets updated dynamically -->
     </div>
 
-    /* Right collumn */
+    <!-- Right collumn  -->
 
     <div class="column">
         <div id="profileInfo" class="widget">
