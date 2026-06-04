@@ -1,0 +1,7 @@
+#experienceTimeline {
+  list-style-type: none;
+}
+
+#experienceTimeline .timelineTimestamp {
+  opacity: 0.8;
+}

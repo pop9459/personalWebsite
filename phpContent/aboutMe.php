@@ -1,3 +1,20 @@
+<?php  
+  function experienceTimeline() {
+    $timeline= json_decode(file_get_contents("../json/experienceTimeline.json"), true);
+
+    $html = "<ol id='experienceTimeline'>";
+    foreach ($timeline["timeline"] as $experience) {
+        $html .= "<li class='timelineItem'>";
+        $html .= "<h3 class='timelineTitle'>" . $experience['title'] . "</h3>";
+        $html .= "<h4 class='timelineTimestamp'>" . $experience['time'] . "</h4>";
+        $html .= "<p class='timelineDescription'>" . $experience['description'] . "<p>";
+        $html .= "</li>";
+    }
+    $html .= "</ol>";
+    return $html;
+  }
+?>
+
 <div class="widget">
     <h1>About Me</h1>
 </div>
@@ -24,4 +41,9 @@
     </p>
 
     <!-- <p>Me in 4 words: Genius, billionaire, playboy, philanthropist.</p>  -->
+</div>
+
+<div class="widget">
+    <h1>Experience timeline</h1>
+    <?php echo experienceTimeline(); ?>
 </div>

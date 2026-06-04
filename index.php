@@ -30,6 +30,7 @@ function isMobile() {
     <link rel="stylesheet" href="css/loadScreen.css" type="text/css">
     <link rel="stylesheet" href="css/cube.css" type="text/css">
     <link rel="stylesheet" href="css/portfolioItems.css" type="text/css">
+    <link rel="stylesheet" href="css/aboutMe.css" type="text/css">
 
     <script src="scripts/main.js" type="module"></script>
 </head>

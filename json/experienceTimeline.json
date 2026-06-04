@@ -1,0 +1,22 @@
+{
+  "timeline": [
+    {
+      "title": "Project Started",
+      "time": "2020",
+      "description": "Initial planning and setup.",
+      "imagePath": "/src/images/start.png"
+    },
+    {
+      "title": "Design Phase",
+      "time": "2020",
+      "description": "Created wireframes and layout ideas.",
+      "imagePath": "/src/images/design.png"
+    },
+    {
+      "title": "Development",
+      "time": "2020",
+      "description": "Implemented the main features.",
+      "imagePath": "src/images/dev.png"
+    }
+  ]
+}
