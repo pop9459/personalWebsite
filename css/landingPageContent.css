@@ -22,7 +22,6 @@
     font-weight: bolder;
 }
 
-
 #clock
 {
     width:max-content;
@@ -33,16 +32,18 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 #clock .time
 {
     line-height: 2ex;
-    font-size: 3.5rem;
+    font-size: 4.2rem;
     font-weight: bolder;
 }
+
 #clock .date
 {
     line-height: 2ex;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
