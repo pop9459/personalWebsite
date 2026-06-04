@@ -21,10 +21,10 @@
     gap: 1.5rem;
 }
 
-body 
+html, body
 {
-    font-family: monospace          ;
-    font-size: 1.25rem;
+    font-family: monospace;
+    font-size: 100%;
     background-color: black;
     color: var(--themeBlue);
 }
@@ -41,6 +41,13 @@ img, video, embed, iframe
     max-height: 90vh;
 }
 
+#content
+{
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
 #background 
 {
     position:fixed;
@@ -49,7 +56,8 @@ img, video, embed, iframe
     transform: translate(-50%, -50%);
 
     background-image: radial-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 0);
-    z-index: -1;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .inLine
