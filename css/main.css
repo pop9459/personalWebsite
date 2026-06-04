@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     gap: 1.5rem;
+    font-size: 1.5rem;
 }
 
 html, body
@@ -32,6 +33,17 @@ html, body
 h1
 {
     text-align: center;
+    font-size: 2.8rem;
+}
+
+h2
+{
+    font-size: 2rem;
+}
+
+h3, h4, h5, h6
+{
+    font-size: 1.8rem;
 }
 
 img, video, embed, iframe
