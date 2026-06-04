@@ -1,162 +1,197 @@
-@font-face { 
-    font-family: "CyberbangBold"; 
-    src: url("../fonts/CyberbangBold.ttf"); 
-} 
+@font-face {
+  font-family: "CyberbangBold";
+  src: url("../fonts/CyberbangBold.ttf");
+}
 
 @font-face {
-    font-family: kode-mono;
-    src: url("../fonts/KodeMono-VariableFont_wght.ttf");
+  font-family: kode-mono;
+  src: url("../fonts/KodeMono-VariableFont_wght.ttf");
 }
 
-:root
-{
-    --themeBlue: #aacfd1;
+:root {
+  --themeBlue: #aacfd1;
 }
 
-*
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    gap: 1.5rem;
-    font-size: 1.5rem;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  font-size: 1.5rem;
 }
 
-html, body
-{
-    font-family: monospace;
-    font-size: 100%;
-    background-color: black;
-    color: var(--themeBlue);
+html,
+body {
+  font-family: monospace;
+  font-size: 100%;
+  background-color: black;
+  color: var(--themeBlue);
 }
 
-h1
-{
-    text-align: center;
-    font-size: 2.8rem;
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
 }
 
-h2
-{
-    font-size: 2rem;
+h2 {
+  font-size: 2rem;
 }
 
-h3, h4, h5, h6
-{
-    font-size: 1.8rem;
+h3 {
+  font-size: 1.8rem;
 }
 
-img, video, embed, iframe
-{
-    max-width: 100%;
-    height: auto;
-    max-height: 90vh;
+h4,
+h5,
+h6 {
+  font-size: 1.4rem;
 }
 
-#content
-{
+img,
+video,
+embed,
+iframe {
+  max-width: 100%;
+  height: auto;
+  max-height: 90vh;
+}
+
+#content {
   background-color: transparent;
   position: relative;
   z-index: 1;
 }
 
-#background 
-{
-    position:fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    background-image: radial-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 0);
-    z-index: 0;
-    pointer-events: none;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.5) 1px,
+    transparent 0
+  );
+  z-index: 0;
+  pointer-events: none;
 }
 
-.inLine
-{
-    display: flex;
-    flex-direction: row;
+.inLine {
+  display: flex;
+  flex-direction: row;
 }
 
-.inlineBlock
-{
-    display: inline-block;
+.inlineBlock {
+  display: inline-block;
 }
 
-.hidden 
-{
-    scale: 0%;
+.hidden {
+  scale: 0%;
 }
 
-.column
-{   
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    gap: 20px;
-    max-width: 100% ;
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  max-width: 100%;
 }
 
-.widget
-{
-    position: relative;
+.widget {
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    width: 100%;
-    padding: 2rem;
-    gap: 1.5rem;
-    overflow: hidden;
+  width: 100%;
+  padding: 2rem;
+  gap: 1.5rem;
+  overflow: hidden;
 }
 
-.widget::after 
-{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--themeBlue);
-    
-    /* generated with: https://css-generators.com/custom-corners/ */
-    clip-path: polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px),0 0,5px  5px ,5px calc(100% - 24px - 2.07px),calc(24px + 2.07px) calc(100% - 5px),calc(100% - 5px) calc(100% - 5px),calc(100% - 5px) calc(24px + 2.07px),calc(100% - 24px - 2.07px) 5px,5px 5px);
+.widget::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--themeBlue);
+
+  /* generated with: https://css-generators.com/custom-corners/ */
+  clip-path: polygon(
+    0 0,
+    calc(100% - 24px) 0,
+    100% 24px,
+    100% 100%,
+    24px 100%,
+    0 calc(100% - 24px),
+    0 0,
+    5px 5px,
+    5px calc(100% - 24px - 2.07px),
+    calc(24px + 2.07px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 5px) calc(24px + 2.07px),
+    calc(100% - 24px - 2.07px) 5px,
+    5px 5px
+  );
 }
 
-.cutCornerBR::after
-{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--themeBlue);
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 24px) 100%,0 100%,0 0,5px  5px ,5px calc(100% - 5px),calc(100% - 24px - 2.07px) calc(100% - 5px),calc(100% - 5px) calc(100% - 24px - 2.07px),calc(100% - 5px) 5px,5px 5px);
-}   
-
-.cutCornerBL::after
-{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--themeBlue);
-    clip-path: polygon(0 0,100% 0,100% 100%,24px 100%,0 calc(100% - 24px),0 0,5px  5px ,5px calc(100% - 24px - 2.07px),calc(24px + 2.07px) calc(100% - 5px),calc(100% - 5px) calc(100% - 5px),calc(100% - 5px) 5px,5px 5px);
+.cutCornerBR::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--themeBlue);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 24px),
+    calc(100% - 24px) 100%,
+    0 100%,
+    0 0,
+    5px 5px,
+    5px calc(100% - 5px),
+    calc(100% - 24px - 2.07px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 24px - 2.07px),
+    calc(100% - 5px) 5px,
+    5px 5px
+  );
 }
 
-.mirror
-{
-    transform: scaleX(-1);
+.cutCornerBL::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--themeBlue);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    24px 100%,
+    0 calc(100% - 24px),
+    0 0,
+    5px 5px,
+    5px calc(100% - 24px - 2.07px),
+    calc(24px + 2.07px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 5px) 5px,
+    5px 5px
+  );
 }
 
-    .spacer{
-    height: 0;
-    margin-top: 0;
-    margin-bottom: auto;
+.mirror {
+  transform: scaleX(-1);
 }
 
-.image
-{
-    max-width: 100%;
+.spacer {
+  height: 0;
+  margin-top: 0;
+  margin-bottom: auto;
 }
 
-.icon
-{
-    filter: invert(87%) sepia(25%) saturate(235%) hue-rotate(134deg) brightness(92%) contrast(83%);
-    aspect-ratio: 1/1;
+.image {
+  max-width: 100%;
+}
+
+.icon {
+  filter: invert(87%) sepia(25%) saturate(235%) hue-rotate(134deg)
+    brightness(92%) contrast(83%);
+  aspect-ratio: 1/1;
 }
