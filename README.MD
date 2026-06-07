@@ -19,7 +19,7 @@ Welcome to my personal portfolio website repository. This project showcases my s
 
 The website should be hosted on www.kapsiar.sk
 
-Feel free to explore the website and the files to learn more about my work and experiences. You can also use this repository as a template for your own portfolio website.
+Feel free to explore the website and the files to learn more about my work and experiences. You can also use this repository as a template for your own portfolio website as long as you give propper credit.
 
 ## Credits
 
