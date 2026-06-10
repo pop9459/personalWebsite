@@ -5,3 +5,69 @@
 #experienceTimeline .timelineTimestamp {
   opacity: 0.8;
 }
+
+#experienceTimeline {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: 1fr 0.1fr 1fr;
+}
+
+/* emply cell */
+#experienceTimeline .timelineSpacer {
+  width: 100%;
+}
+
+/* experience entry */
+#experienceTimeline .timelineItem:nth-child(even) p,
+#experienceTimeline .timelineItem:nth-child(even) h1,
+#experienceTimeline .timelineItem:nth-child(even) h2,
+#experienceTimeline .timelineItem:nth-child(even) h3,
+#experienceTimeline .timelineItem:nth-child(even) h4,
+#experienceTimeline .timelineItem:nth-child(even) h5 {
+  text-align: right;
+}
+
+#experienceTimeline .timelineTitle {
+}
+
+#experienceTimeline .timelineTimestamp {
+}
+
+#experienceTimeline .timelineDescription {
+}
+
+/* graph line */
+#experienceTimeline .timelineSegment {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 0px;
+}
+
+#experienceTimeline .timelineSegment .timelineTopLine,
+#experienceTimeline .timelineSegment .timelineBottomLine {
+  width: 4px;
+  background-color: var(--themeBlue);
+}
+
+#experienceTimeline .timelineSegment .timelineBottomLine {
+  flex: 1 1 auto;
+}
+
+#experienceTimeline .timelineSegment .timelineTopLine {
+  height: 2.55rem;
+}
+
+#experienceTimeline .timelineCircle {
+  background-color: transparent;
+  border-radius: 100%;
+  height: 24px;
+  width: 24px;
+  aspect-ratio: 1/1;
+
+  border: 4px solid var(--themeBlue);
+  box-sizing: border-box;
+}
