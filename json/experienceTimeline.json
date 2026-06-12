@@ -1,22 +1,106 @@
 {
   "timeline": [
     {
-      "title": "Project Started",
-      "time": "2020",
-      "description": "Initial planning and setup.",
-      "imagePath": "/src/images/start.png"
+      "title": "Scratch",
+      "time": "2014",
+      "description": "I had my first \"programing\" experience in middle school when introduced to scratch. I managed to grasp it quite naturally and it felt very exciting which motivated me to continue further.",
+      "imagePath": ""
     },
     {
-      "title": "Design Phase",
-      "time": "2020",
-      "description": "Created wireframes and layout ideas.",
-      "imagePath": "/src/images/design.png"
+      "title": "EV3",
+      "time": "2015",
+      "description": "As a kid i joined the computer club in my school not long after i got the opportunity to participate in ev3 robot competitions. This gave me a great insight into problem-solving and understanding the basics of algorithms. During my first event I managed to score a 3rd place on a countrywide competition and followed with many more podium places after. This was the factor that decided my career path.",
+      "imagePath": ""
     },
     {
-      "title": "Development",
+      "title": "Arduino",
+      "time": "2018",
+      "description": "My first experience with a written language was when I bought an arduino kit and followed a small youtube course about it. This also gave me a nice intro into electronics and some hardware which I kept developing later and found quite handy.",
+      "imagePath": ""
+    },
+    {
+      "title": "SPSJM - Highschool",
+      "time": "2019-2023",
+      "description": "When it came to choosing my highschool, I knew I had to choose an engineering program. I chose Electrical engineering and later choose the optional IT subjects",
+      "imagePath": ""
+    },
+    {
+      "title": "Python",
       "time": "2020",
-      "description": "Implemented the main features.",
-      "imagePath": "src/images/dev.png"
+      "description": "During my tinkering free time I frequently experimented with trying to automate certain tasks like social media posting, internet scraping or music downloading.",
+      "imagePath": ""
+    },
+    {
+      "title": "Github",
+      "time": "Sep 2020",
+      "description": "Creation day of my github account. Didn't really know how to use it at the time but I started to notice it more and more during my tinkering and research which slowly made me more familiar with it bit by bit.",
+      "imagePath": ""
+    },
+    {
+      "title": "Linux",
+      "time": "2021",
+      "description": "I enjoyed playing games as a kid but I only had a laptop which was getting older and slower by the time. Since I was still a kid I didn't really have money for a new one I was always looking for a way to improve its performance via optimization tricks. During this experimenting I stumbled upon an alternative OS called Linux which turned out to be a lot more lightweight which gave me a better performance. I ended up sticking with it which led me to discovering the FOSS world. Due to it't tinkering nature it also greatly changed my mindset about problemsolving and led me to learning even more about technology in general.",
+      "imagePath": ""
+    },
+    {
+      "title": "HTML/CSS",
+      "time": "2021",
+      "description": "During this time i was looking at all kinds of tutorials online, one thing I followed was the responsive web design from freecodecamp which ended up being quite valuable later on.",
+      "imagePath": ""
+    },
+    {
+      "title": "C#",
+      "time": "2021",
+      "description": "Most of the programming courses in highschool were in C#. It gave me a great understanding of the basics of OOP and to this day I love its syntax. I also ended up completing a freecodecamp course on C# with a certificate.",
+      "imagePath": ""
+    },
+    {
+      "title": "Unity",
+      "time": "2022",
+      "description": "For my graduation project of highschool i decided to make a unity game also using C# which further boosted my grasp of the concepts of OOP, programming and software development in general. This is where everything really started to click and I started seeing the bigger picture of how things work.",
+      "imagePath": ""
+    },
+    {
+      "title": "Site Technician / Automator position",
+      "time": "Oct 2022 - Jun 2024",
+      "description": "During the last year of highschool and after graduating it I worked a job at GiGl sk - an arcade cafe for kids where I was maintaining and developing in house infrastructure and attractions. This ranged from workflow automation to game device maintenance. I gained a lot of valuable experience working in a real environment and with products that are used by real customers who gave me feedback in real time. Working this position made me greatly expand my skills in many different areas from hardware to software.",
+      "imagePath": ""
+    },
+    {
+      "title": "Cisco CCNA",
+      "time": "2023",
+      "description": "As a part of the curriculum I also developed some networking knowledge while also completing the basic Cisco CCNA certificate. While I didn't go past the basics of networking I still find value in this knowledge in many of my projects.",
+      "imagePath": ""
+    },
+    {
+      "title": "NHL Stenden",
+      "time": "2024",
+      "description": "I decided to continue developing myself by moving to the netherlands to study IT/CS and find out about new opportunities. During this time I met a lot of new awesome people and had a lot of fun collaborating with them on projects and learning new things.",
+      "imagePath": ""
+    },
+    {
+      "title": "PHP",
+      "time": "2024",
+      "description": "During the beginning of my studies we had a course on web development. One new thing I learned regarding this was PHP which I didn't use before. This really opened my eyes on how the backend really interacts with the frontend. ",
+      "imagePath": ""
+    },
+    {
+      "title": "Javascript",
+      "time": "2024",
+      "description": "To compliment the PHP knowledge I also started using some Javascript for my website projects. ",
+      "imagePath": ""
+    },
+    {
+      "title": "Docker",
+      "time": "2025",
+      "description": "Big thing I was avoiding for a long time for some reason but when I finally looked into it after it came up in one of my projects I was immediately amazed by how cool it is to work with docker. I love the how it automates the process of setting up and deploying applications and how it makes them portable and scalable.",
+      "imagePath": ""
+    },
+    {
+      "title": "Flutter",
+      "time": "2025",
+      "description": "For one of the university projects we were given freedom to choose our own theme for the project. As an opportunity to learn something new I suggested using flutter to make a mobile app. Despite it being a challenge and how different it was from anything I done before I am really happy with what we managed to come up with.",
+      "imagePath": ""
     }
   ]
 }
