@@ -23,12 +23,12 @@
 }
 
 /* experience entry */
-#experienceTimeline .timelineItem:nth-child(even) p,
-#experienceTimeline .timelineItem:nth-child(even) h1,
-#experienceTimeline .timelineItem:nth-child(even) h2,
-#experienceTimeline .timelineItem:nth-child(even) h3,
-#experienceTimeline .timelineItem:nth-child(even) h4,
-#experienceTimeline .timelineItem:nth-child(even) h5 {
+#experienceTimeline .timelineItem:nth-child(odd) p,
+#experienceTimeline .timelineItem:nth-child(odd) h1,
+#experienceTimeline .timelineItem:nth-child(odd) h2,
+#experienceTimeline .timelineItem:nth-child(odd) h3,
+#experienceTimeline .timelineItem:nth-child(odd) h4,
+#experienceTimeline .timelineItem:nth-child(odd) h5 {
   text-align: right;
 }
 
