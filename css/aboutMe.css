@@ -12,6 +12,11 @@
   grid-template-columns: 1fr 0.1fr 1fr;
 }
 
+/* timelineStart */
+#timelineTipText {
+  text-align: center;
+}
+
 /* emply cell */
 #experienceTimeline .timelineSpacer {
   width: 100%;
