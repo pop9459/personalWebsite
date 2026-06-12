@@ -100,5 +100,6 @@ function experienceTimeline()
 
 <div class="widget">
     <h1>Experience timeline</h1>
+    <!-- Timeline graphic generated from a JSON file experienceTimeline.json -->
     <?php echo experienceTimeline(); ?>
 </div>
