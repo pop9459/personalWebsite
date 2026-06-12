@@ -74,31 +74,31 @@
     },
     {
       "title": "NHL Stenden",
-      "time": "2024",
+      "time": "Sep 2024 - Hopefully someday",
       "description": "I decided to continue developing myself by moving to the netherlands to study IT/CS and find out about new opportunities. During this time I met a lot of new awesome people and had a lot of fun collaborating with them on projects and learning new things.",
       "imagePath": ""
     },
     {
       "title": "PHP",
-      "time": "2024",
+      "time": "Nov 2024",
       "description": "During the beginning of my studies we had a course on web development. One new thing I learned regarding this was PHP which I didn't use before. This really opened my eyes on how the backend really interacts with the frontend. ",
       "imagePath": ""
     },
     {
       "title": "Javascript",
-      "time": "2024",
+      "time": "Nov 2024",
       "description": "To compliment the PHP knowledge I also started using some Javascript for my website projects. ",
       "imagePath": ""
     },
     {
       "title": "Docker",
-      "time": "2025",
+      "time": "Feb 2025",
       "description": "Big thing I was avoiding for a long time for some reason but when I finally looked into it after it came up in one of my projects I was immediately amazed by how cool it is to work with docker. I love the how it automates the process of setting up and deploying applications and how it makes them portable and scalable.",
       "imagePath": ""
     },
     {
       "title": "Flutter",
-      "time": "2025",
+      "time": "Feb 2025",
       "description": "For one of the university projects we were given freedom to choose our own theme for the project. As an opportunity to learn something new I suggested using flutter to make a mobile app. Despite it being a challenge and how different it was from anything I done before I am really happy with what we managed to come up with.",
       "imagePath": ""
     }
