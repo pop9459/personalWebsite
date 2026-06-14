@@ -1,142 +1,197 @@
-@font-face { 
-    font-family: "CyberbangBold"; 
-    src: url("../fonts/CyberbangBold.ttf"); 
-} 
+@font-face {
+  font-family: "CyberbangBold";
+  src: url("../fonts/CyberbangBold.ttf");
+}
 
 @font-face {
-    font-family: kode-mono;
-    src: url("../fonts/KodeMono-VariableFont_wght.ttf");
+  font-family: kode-mono;
+  src: url("../fonts/KodeMono-VariableFont_wght.ttf");
 }
 
-:root
-{
-    --themeBlue: #aacfd1;
+:root {
+  --themeBlue: #aacfd1;
 }
 
-*
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    gap: 1.5rem;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  font-size: 1.5rem;
 }
 
-body 
-{
-    font-family: monospace          ;
-    font-size: 1.25rem;
-    background-color: black;
-    color: var(--themeBlue);
+html,
+body {
+  font-family: monospace;
+  font-size: 100%;
+  background-color: black;
+  color: var(--themeBlue);
 }
 
-h1
-{
-    text-align: center;
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
 }
 
-img, video, embed, iframe
-{
-    max-width: 100%;
-    height: auto;
-    max-height: 90vh;
+h2 {
+  font-size: 2rem;
 }
 
-#background 
-{
-    position:fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    background-image: radial-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 0);
-    z-index: -1;
+h3 {
+  font-size: 1.8rem;
 }
 
-.inLine
-{
-    display: flex;
-    flex-direction: row;
+h4,
+h5,
+h6 {
+  font-size: 1.4rem;
 }
 
-.inlineBlock
-{
-    display: inline-block;
+img,
+video,
+embed,
+iframe {
+  max-width: 100%;
+  height: auto;
+  max-height: 90vh;
 }
 
-.hidden 
-{
-    scale: 0%;
+#content {
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
 }
 
-.column
-{   
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    gap: 20px;
-    max-width: 100% ;
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.5) 1px,
+    transparent 0
+  );
+  z-index: 0;
+  pointer-events: none;
 }
 
-.widget
-{
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    padding: 2rem;
-    gap: 1.5rem;
-    overflow: hidden;
+.inLine {
+  display: flex;
+  flex-direction: row;
 }
 
-.widget::after 
-{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--themeBlue);
-    
-    /* generated with: https://css-generators.com/custom-corners/ */
-    clip-path: polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px),0 0,5px  5px ,5px calc(100% - 24px - 2.07px),calc(24px + 2.07px) calc(100% - 5px),calc(100% - 5px) calc(100% - 5px),calc(100% - 5px) calc(24px + 2.07px),calc(100% - 24px - 2.07px) 5px,5px 5px);
+.inlineBlock {
+  display: inline-block;
 }
 
-.cutCornerBR::after
-{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--themeBlue);
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 24px) 100%,0 100%,0 0,5px  5px ,5px calc(100% - 5px),calc(100% - 24px - 2.07px) calc(100% - 5px),calc(100% - 5px) calc(100% - 24px - 2.07px),calc(100% - 5px) 5px,5px 5px);
-}   
-
-.cutCornerBL::after
-{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--themeBlue);
-    clip-path: polygon(0 0,100% 0,100% 100%,24px 100%,0 calc(100% - 24px),0 0,5px  5px ,5px calc(100% - 24px - 2.07px),calc(24px + 2.07px) calc(100% - 5px),calc(100% - 5px) calc(100% - 5px),calc(100% - 5px) 5px,5px 5px);
+.hidden {
+  scale: 0%;
 }
 
-.mirror
-{
-    transform: scaleX(-1);
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  max-width: 100%;
 }
 
-    .spacer{
-    height: 0;
-    margin-top: 0;
-    margin-bottom: auto;
+.widget {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 2rem;
+  gap: 1.5rem;
+  overflow: hidden;
 }
 
-.image
-{
-    max-width: 100%;
+.widget::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--themeBlue);
+
+  /* generated with: https://css-generators.com/custom-corners/ */
+  clip-path: polygon(
+    0 0,
+    calc(100% - 24px) 0,
+    100% 24px,
+    100% 100%,
+    24px 100%,
+    0 calc(100% - 24px),
+    0 0,
+    5px 5px,
+    5px calc(100% - 24px - 2.07px),
+    calc(24px + 2.07px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 5px) calc(24px + 2.07px),
+    calc(100% - 24px - 2.07px) 5px,
+    5px 5px
+  );
 }
 
-.icon
-{
-    filter: invert(87%) sepia(25%) saturate(235%) hue-rotate(134deg) brightness(92%) contrast(83%);
-    aspect-ratio: 1/1;
+.cutCornerBR::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--themeBlue);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 24px),
+    calc(100% - 24px) 100%,
+    0 100%,
+    0 0,
+    5px 5px,
+    5px calc(100% - 5px),
+    calc(100% - 24px - 2.07px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 24px - 2.07px),
+    calc(100% - 5px) 5px,
+    5px 5px
+  );
+}
+
+.cutCornerBL::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--themeBlue);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    24px 100%,
+    0 calc(100% - 24px),
+    0 0,
+    5px 5px,
+    5px calc(100% - 24px - 2.07px),
+    calc(24px + 2.07px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 5px) 5px,
+    5px 5px
+  );
+}
+
+.mirror {
+  transform: scaleX(-1);
+}
+
+.spacer {
+  height: 0;
+  margin-top: 0;
+  margin-bottom: auto;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.icon {
+  filter: invert(87%) sepia(25%) saturate(235%) hue-rotate(134deg)
+    brightness(92%) contrast(83%);
+  aspect-ratio: 1/1;
 }

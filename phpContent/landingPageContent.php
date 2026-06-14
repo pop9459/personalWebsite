@@ -147,11 +147,11 @@ function displayProgressBar($totalSections, $fullSections)
                 <img src="src/img/icons/Tilda_Icons_26sn_linkedin.svg" alt="linkedIn icon" class="icon">
                 <p>Peter Kapsiar</p>
             </a>
-            <a href="https://www.instagram.com/emanuel__bacigala" class="mediaLink">
-                <img src="src/img/icons/Tilda_Icons_26sn_instagram.svg" alt="instagram icon" class="icon">
-                <p>@emanuel_bacigala</p>
+            <a href="mailto:peter.kapsiar@student.nhlstenden.com" class="mediaLink">
+                <img src="src/img/icons/Tilda_Icons_26sn_mail13.svg" alt="mail icon" class="icon">
+                <p>peter.kapsiar@student.nhlstenden.com</p>
             </a>
-            <a href="" class="mediaLink">
+            <a href="mailto:kapsiar888n@gmail.com" class="mediaLink">
                 <img src="src/img/icons/Tilda_Icons_26sn_mail13.svg" alt="mail icon" class="icon">
                 <p>kapsiar888n@gmail.com</p>
             </a>
