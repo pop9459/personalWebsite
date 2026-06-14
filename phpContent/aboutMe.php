@@ -90,6 +90,7 @@ function experienceTimeline()
     <p>
         If you came across this website I hope you will enjoy it or find it cool. I tried to build this website to reflect my personality and to have something that is truly mine and about me. I try to minimize the usage of AI during it's development to retain this personall feeling
     </p>
+
     <!-- Me in 4 words: Genius, billionaire, playboy, philanthropist. -->
 </div>
 
