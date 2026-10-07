@@ -12,7 +12,7 @@ SECRET = os.environ.get("WEBHOOK_SECRET", "").encode()
 
 def verify_signature(body: bytes, sig_header: str) -> bool:
     if not SECRET:
-        return True  # no secret configured — skip validation
+        return False  # no secret configured: refuse rather than accept unsigned deploys
     if not sig_header or not sig_header.startswith("sha256="):
         return False
     mac = hmac.new(SECRET, body, hashlib.sha256)
@@ -88,6 +88,8 @@ class WebhookHandler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
+    if not SECRET:
+        print("WARNING: WEBHOOK_SECRET is empty, all deploy requests will be rejected", flush=True)
     server = HTTPServer(("0.0.0.0", PORT), WebhookHandler)
     print(f"Webhook listener running on :{PORT}", flush=True)
     server.serve_forever()

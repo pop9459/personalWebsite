@@ -1,0 +1,16 @@
+# Install on the VPS as /etc/logrotate.d/website-apache (not deployed automatically).
+# Apache writes /var/log/website/{access,error}.log through the bind mount in
+# docker-compose.yaml. "graceful" makes Apache reopen the files after rotation.
+/var/log/website/*.log {
+    weekly
+    rotate 520
+    compress
+    delaycompress
+    missingok
+    notifempty
+    create 0640 root adm
+    sharedscripts
+    postrotate
+        docker exec personalwebsite_web_1 apachectl graceful >/dev/null 2>&1 || true
+    endscript
+}
