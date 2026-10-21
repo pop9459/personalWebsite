@@ -17,7 +17,7 @@
             <p>Aggregated web-server request statistics, split by client class (human, bot, scanner, internal, unknown).</p>
             <p class="meta">Data range: <span id="range">…</span></p>
             <p class="meta">Generated at: <span id="generated">…</span></p>
-            <p class="note">Note: the current data is an anonymised 2,000-request sample.</p>
+            <p id="banner" class="note" role="status" hidden></p>
         </header>
 
         <p id="error" class="error" role="alert" hidden></p>

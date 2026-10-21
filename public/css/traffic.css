@@ -90,3 +90,8 @@ h2 {
     grid-column: 1 / -1;
   }
 }
+
+.note.live {
+  border-left-color: #1baf7a;
+  color: #1baf7a;
+}

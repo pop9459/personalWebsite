@@ -126,14 +126,32 @@ function pathsChart(data) {
 
 async function main() {
   let data;
-  try {
-    const res = await fetch("json/traffic.json");
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    data = await res.json();
-  } catch (e) {
-    showError(`Could not load traffic data (${e.message}).`);
-    return;
+  let demo = new URLSearchParams(location.search).get("demo") === "1";
+  if (!demo) {
+    try {
+      const res = await fetch("json/traffic.json");
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      data = await res.json();
+    } catch (e) {
+      demo = true; // 404 or unparsable: fall back to the committed sample
+    }
   }
+  if (demo) {
+    try {
+      const res = await fetch("json/traffic.sample.json");
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      data = await res.json();
+    } catch (e) {
+      showError(`Could not load traffic data (${e.message}).`);
+      return;
+    }
+  }
+  const banner = document.getElementById("banner");
+  banner.textContent = demo
+    ? "Demo data: anonymised 2,000-request sample"
+    : `Live data (generated ${data.generated_at})`;
+  banner.classList.add(demo ? "demo" : "live");
+  banner.hidden = false;
   if (typeof Chart === "undefined") {
     showError("Could not load the Chart.js library.");
     return;

@@ -1,0 +1,12 @@
+# Standalone local review setup: docker compose -f docker-compose.dev.yaml up -d
+# Open http://localhost:8095/traffic.php
+services:
+  web:
+    image: php:8.2-apache
+    container_name: kapsiar-dev
+    ports:
+      - "8095:80"
+    volumes:
+      - ./public:/var/www/html:ro
+      - ./docker/apache/site.conf:/etc/apache2/conf-enabled/site.conf:ro
+      - ./docker/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf:ro
