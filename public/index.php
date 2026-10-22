@@ -23,6 +23,7 @@ function isMobile() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter_Kapsiar</title>
+    <meta name="description" content="Personal portfolio of Peter Kapsiar, a computer science student: about me, projects and study portfolio work.">
 
     <link rel="stylesheet" href="css/landingPageContent.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
