@@ -21,6 +21,7 @@ function isMobile() {
 
 <head>
     <meta charset="UTF-8">
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter_Kapsiar</title>
     <meta name="description" content="Personal portfolio of Peter Kapsiar, a computer science student: about me, projects and study portfolio work.">
@@ -42,7 +43,7 @@ function isMobile() {
             <h1>Warning</h1>
             <p>Mobile layout is not yet implemented.</p>
             <p>It is recommended to use a desktop for the intended experience.</p>
-            <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
+            <form action="<?php echo htmlspecialchars(strtok($_SERVER["REQUEST_URI"], "?")); ?>" method="post">
                 <input type="hidden" name="bypassMobileWarning" value="true">
                 <input class="button" type="submit" value="Continue anyway">
             </form>

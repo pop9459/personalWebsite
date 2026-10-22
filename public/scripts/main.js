@@ -1,6 +1,7 @@
 import { textSplash, backgroundIntroduce, animateWidgets, animateContainerWidgets} from  "./animations.js";
 import { loadToContainer} from "./loaders.js";
-import { setupListeners } from "./buttons.js";
+import { setupListeners, showSection } from "./buttons.js";
+import { DEFAULT_SECTION, sectionFromPath } from "./sections.js";
 import { startClock } from "./clock.js";
 
 window.onload = function() {
@@ -27,9 +28,11 @@ window.onload = function() {
     ]))
     .then(() => new Promise(resolve => setTimeout(resolve, 1500))) // delay 1.5 second
     .then(() => Promise.all([
-        //load defalut page
-        loadToContainer("centerContentDisplay" ,"phpContent/aboutMe.php")
-        .then(() => animateContainerWidgets("centerContentDisplay")),
+        //load default page
+        //(the section named by the URL, else About me; "/" stays "/")
+        location.pathname.replace(/\/+$/, "") === ""
+            ? showSection(DEFAULT_SECTION, "none")
+            : showSection(sectionFromPath(location.pathname) || DEFAULT_SECTION, "replace"),
     ]))
 
     .catch(error => console.error("Error occurred: ", error));

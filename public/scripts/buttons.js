@@ -1,111 +1,32 @@
 import { animateContainerWidgets } from "./animations.js";
 import { loadToContainer } from "./loaders.js";
+import { SECTIONS, DEFAULT_SECTION, sectionFromPath, urlForSection } from "./sections.js";
 
 export function clearContents(containerID)
 {
     //TODO: Add a fade out animation
 }
 
+// Load a section into the centre display. pushHistory: add a history entry (menu click),
+// replace: rewrite the current entry (first load), neither: back/forward navigation.
+export function showSection(section, history_mode = "push") {
+    if (history_mode === "push" && location.pathname !== urlForSection(section)) {
+        history.pushState({ section: section.path }, "", urlForSection(section));
+    } else if (history_mode === "replace") {
+        history.replaceState({ section: section.path }, "", urlForSection(section));
+    }
+    return loadToContainer("centerContentDisplay", section.file)
+        .then(() => animateContainerWidgets("centerContentDisplay"));
+}
+
 export function setupListeners() {
-    // MENU BUTTONS
-    document.getElementById("aboutMeButton").onclick = function() { 
-        loadToContainer("centerContentDisplay" ,"phpContent/aboutMe.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
+    // MENU, MY PROJECTS and PORTFOLIO BUTTONS
+    SECTIONS.forEach(section => {
+        document.getElementById(section.button).onclick = () => showSection(section);
+    });
 
-    // MY PROJECTS BUTTONS
-    document.getElementById("personalWebsiteButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/myProjects/personalWebsite.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("maturityProjectButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/myProjects/maturityProject.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("sunnySocksWebsiteButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/myProjects/sunnySocksWebsite.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("campusLinkButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/myProjects/campusLink.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("battlebotButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/myProjects/battlebot.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-
-    // PORTFOLIO 2 BUTTONS
-    document.getElementById("portfolio2ReflectionButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio2/portfolio2Reflection.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("portfolio2FeedbackButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio2/portfolio2Feedback.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("portfolio2PDPButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio2/portfolio2PDP.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("portfolio2ProjectPlanButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio2/portfolio2ProjectPlan.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("portfolio2CommunicationButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio2/portfolio2Communication.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("portfolio2PresentingButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio2/portfolio2Presenting.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("portfolio2EdumundoAssignmentsButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio2/portfolio2EdumundoAssignments.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("portfolio2MeetingTechniquesButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio2/portfolio2MeetingTechniques.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("portfolio2FinalInterviewButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio2/portfolio2FinalInterview.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-
-    // PORTFOLIO 1 BUTTONS
-    document.getElementById("reflectionReportButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio1/reflectionReport.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("studyCareerCoachingButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio1/studyCareerCoaching.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("feedbackFormsButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio1/feedbackForms.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("projectPlanButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio1/projectPlan.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("communicationButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio1/communication.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("presentationButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio1/presentation.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("meetingTechniquesButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio1/meetingTechniques.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
-    document.getElementById("edumundoAssignmentsButton").onclick = function() {
-        loadToContainer("centerContentDisplay", "phpContent/portfolio1/edumundoAssignments.php")
-        .then(() => animateContainerWidgets("centerContentDisplay"));
-    };
+    // Back/forward buttons: show the section for the address bar without a new history entry
+    window.onpopstate = () => showSection(sectionFromPath(location.pathname) || DEFAULT_SECTION, "none");
 
     console.log("Buttons loaded successfully");
 }
